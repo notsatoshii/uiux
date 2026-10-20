@@ -40,6 +40,11 @@ Each item below, present on the surface without a reason written in the brief, i
 - Stock photos of a laptop on a desk with a coffee.
 - Screenshots with the real UI blurred or with lorem ipsum showing.
 
+- Abstract shapes as a stand-in for photos: gold discs, rings, spotlight beams, glowing orbs, gradient blobs on hero or mode cards. If there is no photo, use a plain surface, not clip-art.
+- Brand colours as large fills or gradients (a green gradient hero, gold everywhere). Brand colours on an app are accents: the one main action, the active state, data, earned moments.
+- Extra-wide or extra-heavy display faces (Archivo Expanded 800 and the like) on every heading of an app: reads as a sports-drink ad. Top apps use a neutral sans with big, light numbers.
+- The owner's logo recoloured (a charcoal mark turned gold). Use the logo as given; only a white or black version for contrast.
+
 ## Motion
 
 - Everything fades up on scroll with the same 600 ms ease, including body text.

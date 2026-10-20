@@ -8,7 +8,8 @@ Lens: does everything in the brief's feature list work, and does the flow make s
 2. Walk the usability tasks as a visitor would, in the browser when a tool is available: start where they start, do the task, note every moment of hesitation, dead end, wrong default, or step that could be removed. When no browser is available, trace the code path and say so.
 3. Check every interactive element's states: default, hover, focus, active, disabled, loading, success, error. Missing states are findings.
 4. Check data edges: empty, one item, many items, long strings, missing image, slow response. For forms: validation timing, error placement, what happens on submit, on failure, on double submit.
-5. Check that nothing outside the brief regressed on an existing surface: routes, links, data shown, feature parity. Any lost feature is severity 1.
+5. Load time on a phone: with the network throttled to a decent 4G (about 20 Mbps, 40 ms), time from tap to the first usable screen, and from opening a feature to it being ready (camera, models, maps, video). Over 3 s anywhere is severity 2; a screen that blocks on a heavy download or a start-up that can hang is severity 1. Heavy assets must be preloaded earlier, cached and never block the UI.
+6. Check that nothing outside the brief regressed on an existing surface: routes, links, data shown, feature parity. Any lost feature is severity 1.
 
 ## Anchors
 

@@ -4,12 +4,14 @@ The main session is the orchestrator. It never designs and never fixes; it runs 
 
 ## 0. Intake
 
+0. Installed copy: the skill that runs must be this repo, not an old copy. Check that the running skill folder has `taste/` and `critics/09-microcraft.md`; if not, stop and tell the user to relink `~/.claude/skills/uiux` to the repo (a stale copy ran a whole Oratio redesign on 2026-10-20 with no taste layer, no Mobbin and no micro-craft critic).
 1. Resolve the surface from the argument: a route, a file, a folder or a URL. Record the entry file(s) and the dev-server command (from `.claude/launch.json`, `package.json`, or the project's run skill).
 2. New build or existing? Existing = the entry file renders something today. New = nothing renders yet or the user said "new".
 3. House rules: read `uiux.md` in the project root if present, then the project's CLAUDE.md. Taste: note whether the project has a `taste.md`, whether the owner's taste file exists (`$UIUX_TASTE` or `~/.claude/uiux/taste.md`; if not, offer `/uiux taste init` once in the chat and continue), and which taste skills are installed (`impeccable`, `design-taste-frontend`, `high-end-visual-design`); record both in the brief's House rules section so critics 05–09 and the builder load them without probing. Pull out: copy rules (language, register, "copy may not change"), parity rules, forbidden vocabulary, bar override, token budget. Write them into the brief's House rules section verbatim.
 4. Existing brief at `docs/design/<surface>/brief.md`? Keep it unless the user asked for a new interview.
 5. Screenshot tooling: in order of preference, the host's preview/browser tools, Playwright MCP, the `playwright-cli` skill. If none works, critics work from code alone and every report says so in its first line.
 5b. Connectors and tools present: Mobbin, HyperFrames or Remotion skills, FFmpeg, Python with Pillow. Record what is available in the brief's House rules section so every critic knows without probing.
+5c. Real-app reference board (required, before the brief is written): screens of 3–6 leading products in the surface's category, on the same device class. Mobbin when connected; otherwise the iPhone/Android screenshots on their public App Store / Google Play pages (scripted with Playwright), plus every reference image the owner sent. Save the board as one image and the single screens in the session scratchpad, never in the project repo (they are someone else's copyright). Every visual critic (02, 05, 06, 07, 09) and the builder look at it each cycle. Write down, for the board as a whole, its proportions: base colour, how much of the screen is accent colour, type weight and size of headings and numbers, how decoration is used (usually: none; photos and data carry the colour). The brief's visual world must agree with these proportions or say why not.
 6. Surface mode, borrowed from impeccable: persuade (landing, pricing), operate (app UI, admin), read (docs, articles), experience (portfolio, showcase). The mode changes which rubric anchors apply.
 
 ## 1. Interview
@@ -19,6 +21,12 @@ Run `interview/questions.md` with the `grilling` skill's round format. Skip ques
 ## 2. First build (new surfaces only)
 
 Build the whole surface from the brief, with taste loaded first (`taste/README.md` order) and the strongest build skill installed (`impeccable` new-work, else `design-taste-frontend`, else plain with `taste/defaults.md`). Mobile viewport first if the brief says the primary device is a phone. Then screenshots (see 3.1) and go to cycles. Do not review during the build.
+
+## 2b. Owner preview (after the first build, and whenever a cycle changes the look)
+
+Send the owner one side-by-side image: the surface's main screens (phone, first screen only) next to the reference board, in the chat, without asking a question. The loop does not wait. But any reaction the owner gives outranks every critic score: a negative one ("tacky", "bad", "ugly", "cheap") resets the aesthetic, references and micro-craft scores to at most 4, the orchestrator writes a one-paragraph diagnosis against the reference board, the brief's visual world is rewritten from the owner's words, and the next build restarts from that. Log the reaction per 3.6.
+
+Never deploy or ship a redesign the owner has not seen in a preview. "The owner wants to test" means: deploy only what they have reacted to, or say plainly that the look is unreviewed.
 
 ## 3. Cycle
 
@@ -37,6 +45,7 @@ Spawn one subagent per active critic in a single message. Each gets exactly this
 - the surface's source files (paths)
 - this cycle's screenshots and, from cycle 2 on, the previous cycle's screenshots
 - the house rules section
+- the real-app reference board (0.5c) for critics 02, 05, 06, 07 and 09
 
 Active critics by cycle:
 
@@ -66,7 +75,7 @@ Re-screenshot (3.1). Write `docs/design/<surface>/cycle-N.md` from `templates/cy
 
 Stop when any of these is true, and say which:
 
-- **Bar:** every active critic scored ≥ bar this cycle, and no severity-1 finding is open.
+- **Bar:** every active critic scored ≥ bar this cycle, no severity-1 finding is open, and the fresh-eyes check passed: one extra subagent that has NOT read the brief is shown the surface next to the reference board and asked only "Would this sit on a phone's home screen next to these apps without looking cheaper or more decorated? yes / no, and the one thing that gives it away". A no keeps the loop going with that one thing as a severity-2 finding. A brief can encode bad taste; this check cannot read the brief, so it cannot be talked into it.
 - **Plateau:** a majority of critics said "same" or "worse" two cycles running.
 - **Cap:** cycle N = `--cycles`, or the token budget in the house rules is reached.
 

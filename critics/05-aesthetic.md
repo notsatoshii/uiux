@@ -14,6 +14,12 @@ Lens: does the surface look like this brand, with intent, and not like the stati
 - **Pacing:** the loud and quiet zones from the brief are where the brief put them.
 - **Mode fit:** persuade surfaces earn attention; operate surfaces stay out of the way; read surfaces make reading pleasant; experience surfaces let the work lead.
 
+- **Side by side:** open the real-app reference board (orchestration 0.5c) next to this cycle's phone shots. Compare proportions, not components: how much of the screen is accent colour, how heavy the headings are, how much decoration there is, how much empty space. Name the single biggest difference.
+
+## Score cap
+
+The score cannot go above 6 while the surface looks cheaper, louder or more decorated than the reference board, whatever the brief's adjectives say ("regal", "bold", "confident" are not licences for decoration). Quote the difference you named.
+
 ## Anchors
 
 - **4:** fails the logo test; two or more slop items; the hero is the generic layout; the three words are not visible in any element; sections all look alike; closest reference: none.
