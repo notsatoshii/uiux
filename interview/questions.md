@@ -1,0 +1,42 @@
+# Interview question bank
+
+Run with the `grilling` skill's round format: a round is every question whose prerequisites are settled, numbered, each with a recommended answer. Wait for answers, recompute, next round. Skip anything already answered by the brief, house rules, PRODUCT.md or DESIGN.md. Facts (what framework, what exists, what the current page looks like) are yours to look up, never the user's to type.
+
+Keep the whole interview under four rounds for a single page. The user is giving direction, not writing a spec.
+
+## Round 1: purpose
+
+1. **The one job.** When this surface works, what did the visitor just do? One action (sign up, buy, finish the task, understand X). If two compete, which wins?
+2. **Who, on what.** Who is the visitor (role, context, mood when they arrive) and what device, mostly? Recommend from the project's existing audience if known.
+3. **New or existing.** Confirm the intake finding. For an existing surface: what must not change (features, copy, routes, data)?
+4. **Mode.** Persuade, operate, read or experience. Recommend from the surface type.
+
+## Round 2: brand point of view
+
+5. **Three words, three anti-words.** Three adjectives the surface should feel like and three it must never feel like. Recommend a set from existing brand material if any.
+6. **Core belief.** The one sentence the visitor should still believe after leaving. (The Scrollcraft "core belief statement".)
+7. **References, with the rule.** Two or three products or pages whose *mechanics* to learn from (pricing toggle, onboarding order, how they show proof). State back the rule: take mechanics, never visuals; no 1:1 clones.
+8. **Visual world.** Existing tokens, fonts, palette, DESIGN.md? If yes: keep, expand, or replace. If none: pick a direction now (recommend one, name the fonts and the palette feel) so the critics have something to hold the build to.
+9. **Signature move.** One memorable interaction or moment unique to this surface. Recommend one. "None" is an acceptable answer for operate-mode surfaces.
+
+## Round 3: content and proof
+
+10. **Real assets.** What exists: photos, logos, screenshots, data, testimonials, numbers. What is missing and may be generated (illustration, placeholder), and what may never be invented (numbers, quotes, prices, facts).
+11. **Copy rules.** Language, register (e.g. Korean 존댓말), forbidden words, whether copy may change at all. Pulled from house rules if present; confirm.
+12. **Proof.** What evidence can the page show for its claims, and where does it come from?
+13. **Emotional pacing.** Where should the page be loud (hero, the signature move, the ask) and where quiet (reading, forms)?
+
+## Round 4: features and the bar
+
+14. **Feature list.** For an operate surface: every task the user must be able to do here. For persuade: every section, in order. This list becomes the functionality critic's checklist.
+15. **Accessibility and devices.** Minimum viewports, dark mode, reduced motion, keyboard users, screen readers: which are required, which nice to have.
+16. **Bar and budget.** Score bar (default 8; 9 for flagship, 7 for internal), cycle cap (default 6), token or time budget if any.
+17. **Definition of done.** Read back: the one job, the three words, the must-not-change list, the feature list, the bar. Ask for approval. On approval, write the brief.
+
+## Redesign branch
+
+When the surface exists, add to round 1:
+
+- R1. **Parity.** Every feature the current surface has, listed from the code (you list it, the user confirms). All of it stays unless named here.
+- R2. **Usability tasks.** Three tasks a real user does on this surface today, used as the functionality critic's walk-through.
+- R3. **What is wrong.** The user's own view of what fails today, in their words. This seeds, not replaces, the critics.

@@ -1,0 +1,23 @@
+# 02 References
+
+Lens: does the surface use the proven mechanics of the brief's references, without copying their look?
+
+## Method
+
+1. For each reference in the brief, write down (from your own knowledge of that product; do not browse unless a tool is offered) the two or three mechanics worth having here: order of sections, how proof is shown, how the price or the ask is framed, how the first action is made easy, how empty states invite. Mechanics only.
+2. Check the surface against each mechanic: present, partial, absent, or not applicable to this mode.
+3. Check for cloning: a section that would be recognised as the reference's at a glance (same layout, same colour story, same copy rhythm) is a severity-2 finding. Mechanics are free; looks are not.
+4. Check the conversion patterns that apply to the mode, from behavioural research, as mechanics:
+   - smart defaults instead of empty fields
+   - goal gradient: never show 0% progress
+   - reciprocity: value before the gate
+   - endowment: let the visitor shape something before asking them to sign up
+   - loss framing where a real loss exists (never invented)
+   - anchoring where there is a real anchor (never invented)
+   Flag a pattern as a finding only when it fits the one job; a docs page does not need a pricing anchor.
+
+## Anchors
+
+- **4:** the references are ignored or copied. The page's order of sections is the generic default (hero, three features, testimonials, CTA) regardless of the one job; proof is a claim with no evidence; the first action asks for commitment before giving anything.
+- **7:** the main mechanics are there (the ask is framed well, proof exists, the first step is easy); one reference's lesson is missing or one section leans too close to a reference's look.
+- **9:** every applicable mechanic is present and reads as this brand's; a visitor who knows the references would not name them; the conversion patterns that fit the one job are all in place and none is faked.
