@@ -6,7 +6,7 @@ The main session is the orchestrator. It never designs and never fixes; it runs 
 
 1. Resolve the surface from the argument: a route, a file, a folder or a URL. Record the entry file(s) and the dev-server command (from `.claude/launch.json`, `package.json`, or the project's run skill).
 2. New build or existing? Existing = the entry file renders something today. New = nothing renders yet or the user said "new".
-3. House rules: read `uiux.md` in the project root if present, then the project's CLAUDE.md. Pull out: copy rules (language, register, "copy may not change"), parity rules, forbidden vocabulary, bar override, token budget. Write them into the brief's House rules section verbatim.
+3. House rules: read `uiux.md` in the project root if present, then the project's CLAUDE.md. Taste: note whether the project has a `taste.md` and which taste skills are installed (`impeccable`, `design-taste-frontend`, `high-end-visual-design`); record both in the brief's House rules section so critics 05–09 and the builder load them without probing. Pull out: copy rules (language, register, "copy may not change"), parity rules, forbidden vocabulary, bar override, token budget. Write them into the brief's House rules section verbatim.
 4. Existing brief at `docs/design/<surface>/brief.md`? Keep it unless the user asked for a new interview.
 5. Screenshot tooling: in order of preference, the host's preview/browser tools, Playwright MCP, the `playwright-cli` skill. If none works, critics work from code alone and every report says so in its first line.
 5b. Connectors and tools present: Mobbin, HyperFrames or Remotion skills, FFmpeg, Python with Pillow. Record what is available in the brief's House rules section so every critic knows without probing.
@@ -18,7 +18,7 @@ Run `interview/questions.md` with the `grilling` skill's round format. Skip ques
 
 ## 2. First build (new surfaces only)
 
-Build the whole surface from the brief, with the strongest build skill installed (`impeccable` new-work, else `design-taste-frontend`, else plain). Mobile viewport first if the brief says the primary device is a phone. Then screenshots (see 3.1) and go to cycles. Do not review during the build.
+Build the whole surface from the brief, with taste loaded first (`taste/README.md` order) and the strongest build skill installed (`impeccable` new-work, else `design-taste-frontend`, else plain with `taste/defaults.md`). Mobile viewport first if the brief says the primary device is a phone. Then screenshots (see 3.1) and go to cycles. Do not review during the build.
 
 ## 3. Cycle
 

@@ -50,6 +50,19 @@ uiux fixes this in two steps:
 
 Each rubric has three written examples: what a 4 looks like, what a 7 looks like, what a 9 looks like. A score with no quoted example is rejected, and that critic runs again. From the second cycle, each critic first compares the new screenshots with the old ones, blind, and says "better", "same" or "worse".
 
+## Where the taste comes from
+
+A brief tells the critics what the page is for. It does not tell them what good looks like. The `taste/` folder does. The critics for aesthetic, visuals, motion, delight and micro-craft, and the builder, load it before they look at the page. In this order:
+
+1. **Your `taste.md`** in the project root: what you like and hate, with examples. It wins. Copy [examples/taste.md](examples/taste.md) to start.
+2. **[taste/references.md](taste/references.md)**: products and pages whose craft has held up, by mode, each with one line on why. Linear, Stripe, Toss, Vercel, Family, Raycast, Apple, and the galleries. A bar, never a layout to copy.
+3. **[taste/slop.md](taste/slop.md)**: the tells of AI-default design. Each one on the page without a reason in the brief is a finding. Three on one screen cap the aesthetic score at 5.
+4. **[taste/defaults.md](taste/defaults.md)**: known-good type, spacing, colour, shadow and motion choices for when the brief is silent.
+5. **Installed taste skills**, when present: impeccable's craft floor, design-taste-frontend, high-end-visual-design.
+6. **Mobbin**, when connected: real screens of the same kind of page, to calibrate density and hierarchy. Mechanics only.
+
+The aesthetic critic must name the reference the page comes closest to, and the gap. "Closest to nothing" is a finding on its own.
+
 ## When the loop stops
 
 ![Stop rules: bar, plateau, cap, your call](docs/stop-rules.svg)
@@ -147,10 +160,12 @@ interview/brief-template.md
 critics/00-shared.md       what every critic gets, the output JSON, the severity rules
 critics/01..09-*.md        one lens each, with the 4 / 7 / 9 examples
 builder/fix.md             the rules for the single writer
+taste/                     README.md (load order) · references.md · slop.md · defaults.md
 integrations/              mobbin.md · motion-assets.md (HyperFrames, Remotion) · lottie.md
 tools/                     the three scripts and the video-to-spec procedure
 templates/cycle-report.md
 examples/uiux.md           a house-rules file to copy
+examples/taste.md          a project taste file to copy
 docs/                      the diagrams and sources.md
 ```
 

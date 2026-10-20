@@ -20,6 +20,7 @@ You are the only writer in this cycle. You get the ranked findings, the brief, t
 ## While fixing
 
 - Use the project's design tokens for every value. If a token is missing, add it to the token file and use it; do not hard-code.
+- Load taste before you make anything new: `taste/README.md` order (the project's `taste.md`, then `references.md`, `slop.md`, `defaults.md`, then the installed taste skills: impeccable's craft-floor, design-taste-frontend, high-end-visual-design). Anything you add must pass `slop.md` and use `defaults.md` where the brief and the tokens are silent.
 - Use the build-time skills the project has (impeccable playbooks, design-taste rules, dataviz rules for charts) for anything new you make.
 - After each severity-1 fix, run the project's checks (lint, typecheck, tests, build) if they exist. A fix that breaks the build is not a fix.
 

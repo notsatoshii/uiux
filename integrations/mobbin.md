@@ -6,6 +6,7 @@ Mobbin is a library of real app and web screens and flows. In Claude it is a con
 
 - **Interview, question 7 (references):** for each reference the user names, and for the surface type, search flows and sections once and show the user two or three candidate *mechanics* with the screen they come from. The user picks. The brief records the mechanic and the Mobbin screen id, never a visual description to copy.
 - **Critic 02 (references):** search the surface's type (e.g. "pricing page", "onboarding fork", "academy landing") and the brief's references; pull the mechanics (order of sections, how proof is shown, how the ask is framed, first-step friction) from the top results and check the surface against them. Cite the screens in findings.
+- **Critic 05 (aesthetic):** search the surface type once and look at the top screens to calibrate what good density, hierarchy and section order look like for this kind of page. This is the taste use (`taste/README.md`, item 7): a bar, not a layout.
 - **Critic 06 (visualize):** search for how comparable products show the same kind of number or comparison, to propose a proven visual form.
 - **Builder:** may look at a cited screen to understand a mechanic. May not reproduce its layout, colour story or copy rhythm. The references critic checks for clones next cycle.
 

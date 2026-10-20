@@ -16,6 +16,10 @@ Read [loop/orchestration.md](loop/orchestration.md) before doing anything. It is
 4. **Cycles** (`loop/orchestration.md`): parallel critics → merged ranked findings → one builder → screenshots → score → repeat or stop. Nine critics in `critics/`, gated by progress: 01–05 always; 06 visualize, 07 motion, 08 delight once functionality holds ≥ 8; 09 micro-craft once everything else is within one point of the bar. Critics use the scripts in `tools/` for evidence and the connectors in `integrations/` (Mobbin, HyperFrames or Remotion, Lottie) when present.
 5. **Report**: `docs/design/<surface>/cycle-N.md` per cycle, `docs/design/<surface>/final.md` at the end, and a five-line summary in chat.
 
+## Taste
+
+The brief says what the surface is for. `taste/` says what good looks like: the project's own `taste.md` first, then the curated references, the slop list and the known-good defaults, then the installed taste skills, then Mobbin for calibration. Critics 05–09 and the builder load it in that order before they look at the surface (`taste/README.md`).
+
 ## Rules that never bend
 
 - Critics read, the builder writes. Never two writers on the same files.
