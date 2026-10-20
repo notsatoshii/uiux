@@ -9,6 +9,7 @@ The main session is the orchestrator. It never designs and never fixes; it runs 
 3. House rules: read `uiux.md` in the project root if present, then the project's CLAUDE.md. Pull out: copy rules (language, register, "copy may not change"), parity rules, forbidden vocabulary, bar override, token budget. Write them into the brief's House rules section verbatim.
 4. Existing brief at `docs/design/<surface>/brief.md`? Keep it unless the user asked for a new interview.
 5. Screenshot tooling: in order of preference, the host's preview/browser tools, Playwright MCP, the `playwright-cli` skill. If none works, critics work from code alone and every report says so in its first line.
+5b. Connectors and tools present: Mobbin, HyperFrames or Remotion skills, FFmpeg, Python with Pillow. Record what is available in the brief's House rules section so every critic knows without probing.
 6. Surface mode, borrowed from impeccable: persuade (landing, pricing), operate (app UI, admin), read (docs, articles), experience (portfolio, showcase). The mode changes which rubric anchors apply.
 
 ## 1. Interview
@@ -41,6 +42,9 @@ Active critics by cycle:
 
 - Cycle 1 and any cycle where functionality scored below 8 last time: 01 best practices, 02 references, 03 design system, 04 functionality, 05 aesthetic.
 - Once functionality has scored ≥ 8: add 06 visualize, 07 motion, 08 delight. Once visualize has landed its findings (cycle after its first run), motion also reviews the visuals it produced.
+- Once every other active critic scored ≥ bar − 1 in the previous cycle: add 09 micro-craft. It runs at most twice per loop.
+
+Tools and integrations the critics may use are listed in `tools/README.md` and `integrations/`. A critic that uses one cites its output (file path, screen id) in the finding. When a connector in `integrations/` is not connected, the critic says so in its summary's first line and continues without it.
 
 With `--only`, run just those.
 
@@ -54,7 +58,7 @@ Needs-user items (copy changes under a "copy may not change" rule, brand picks, 
 
 ### 3.4 Builder, alone
 
-One subagent, `builder/fix.md`, gets the ranked list, the brief, the house rules and the file paths. It fixes top-down, severity 1 and 2 fully, severity 3 as far as the cycle budget allows, and returns what it changed and what it did not, with reasons. It may not add features from the ideas list and may not touch files outside the surface.
+One subagent, `builder/fix.md`, gets the ranked list, the brief, the house rules and the file paths. When a finding calls for a generated motion asset, the builder writes its spec into the cycle report first and makes it per `integrations/motion-assets.md`; feedback-moment animations follow `integrations/lottie.md`. It fixes top-down, severity 1 and 2 fully, severity 3 as far as the cycle budget allows, and returns what it changed and what it did not, with reasons. It may not add features from the ideas list and may not touch files outside the surface.
 
 ### 3.5 Score and decide
 

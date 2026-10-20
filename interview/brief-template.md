@@ -20,8 +20,15 @@ surface: <route or file> · mode: <persuade|operate|read|experience> · kind: <n
 - real assets: <list>
 - may be generated: <list>
 - may never be invented: numbers, quotes, prices, <…>
-- proof available: <claim → evidence source>
-- pacing: loud at <…>; quiet at <…>
+- receipts: <claim → evidence source → how the page shows it> (every claim; none without)
+- reference measurements (tools/extract-tokens.py, if a reference image was given): ink contrast <…>, whitespace <…>, spacing unit <…>
+
+## Scroll journey (persuade/read/experience) or task path (operate)
+| # | section | the visitor sees | reveals / moves | loud/quiet | believes by the end |
+|---|---|---|---|---|---|
+| 1 | hero | … | … | loud | … |
+| 2 | … | | | | |
+- motion reference spec (tools/video-to-motion-spec.md), if any: <path>
 
 ## House rules (verbatim from uiux.md / CLAUDE.md)
 <copy language and register, "copy may not change", parity, forbidden words, budgets>

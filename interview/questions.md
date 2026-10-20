@@ -16,15 +16,17 @@ Keep the whole interview under four rounds for a single page. The user is giving
 5. **Three words, three anti-words.** Three adjectives the surface should feel like and three it must never feel like. Recommend a set from existing brand material if any.
 6. **Core belief.** The one sentence the visitor should still believe after leaving. (The Scrollcraft "core belief statement".)
 7. **References, with the rule.** Two or three products or pages whose *mechanics* to learn from (pricing toggle, onboarding order, how they show proof). State back the rule: take mechanics, never visuals; no 1:1 clones.
-8. **Visual world.** Existing tokens, fonts, palette, DESIGN.md? If yes: keep, expand, or replace. If none: pick a direction now (recommend one, name the fonts and the palette feel) so the critics have something to hold the build to.
-9. **Signature move.** One memorable interaction or moment unique to this surface. Recommend one. "None" is an acceptable answer for operate-mode surfaces.
+8. **Visual world.** Existing tokens, fonts, palette, DESIGN.md? If yes: keep, expand, or replace. If none: pick a direction now (recommend one, name the fonts and the palette feel) so the critics have something to hold the build to. If the user hands you a reference image for the feel, run `tools/extract-tokens.py` on it and put the measurements (contrast, whitespace ratio, spacing unit) in the brief; the colours themselves are not transferred.
+9. **Signature move.** One memorable interaction or moment unique to this surface. Recommend one. "None" is an acceptable answer for operate-mode surfaces. If the user has a clip of an interaction they like, run `tools/video-to-motion-spec.md` on it and attach the spec to the brief.
+9b. **Mobbin, when connected.** For the surface type and each reference, search flows and sections once and show two or three candidate mechanics with their screen ids; the user picks. See `integrations/mobbin.md`.
 
 ## Round 3: content and proof
 
 10. **Real assets.** What exists: photos, logos, screenshots, data, testimonials, numbers. What is missing and may be generated (illustration, placeholder), and what may never be invented (numbers, quotes, prices, facts).
 11. **Copy rules.** Language, register (e.g. Korean 존댓말), forbidden words, whether copy may change at all. Pulled from house rules if present; confirm.
 12. **Proof.** What evidence can the page show for its claims, and where does it come from?
-13. **Emotional pacing.** Where should the page be loud (hero, the signature move, the ask) and where quiet (reading, forms)?
+13. **Scroll journey.** Section by section from the top: what the visitor sees, what reveals or moves there, loud or quiet, and what they should believe by the end of it. Recommend the whole map in one block; the user edits. This becomes the brief's scroll journey, which the motion critic checks against. For operate surfaces this is the task path instead of a scroll.
+13b. **Receipts.** For every claim or number the page will make: where is the evidence, and will the page show it (footnote, source drawer, live number, screenshot)? A claim with no receipt is cut or rewritten as a range; nothing is invented.
 
 ## Round 4: features and the bar
 

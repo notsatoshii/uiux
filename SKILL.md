@@ -13,7 +13,7 @@ Read [loop/orchestration.md](loop/orchestration.md) before doing anything. It is
 1. **Intake** (you, no questions): find the surface, decide new build vs existing, read the project's house rules (`uiux.md` in the project root, then CLAUDE.md), find an existing brief. Facts come from the filesystem, never from the user.
 2. **Interview** (`interview/questions.md`): rounds of numbered questions with a recommended answer each, in the style of the `grilling` skill. Ends with a definition of done the user approves. Output: `docs/design/<surface>/brief.md` from `interview/brief-template.md`. Skipped when a brief exists and the user did not ask for a new one; then ask one question: "Anything changed since this brief?"
 3. **First build** (only when the surface does not exist yet): build from the brief with the project's build-time skills (`impeccable`, `design-taste-frontend` or whatever is installed), then screenshot.
-4. **Cycles** (`loop/orchestration.md`): parallel critics → merged ranked findings → one builder → screenshots → score → repeat or stop.
+4. **Cycles** (`loop/orchestration.md`): parallel critics → merged ranked findings → one builder → screenshots → score → repeat or stop. Nine critics in `critics/`, gated by progress: 01–05 always; 06 visualize, 07 motion, 08 delight once functionality holds ≥ 8; 09 micro-craft once everything else is within one point of the bar. Critics use the scripts in `tools/` for evidence and the connectors in `integrations/` (Mobbin, HyperFrames or Remotion, Lottie) when present.
 5. **Report**: `docs/design/<surface>/cycle-N.md` per cycle, `docs/design/<surface>/final.md` at the end, and a five-line summary in chat.
 
 ## Rules that never bend

@@ -6,7 +6,7 @@ Lens: does the surface look like this brand, with intent, and not like the stati
 
 - **The logo test:** cover the logo. Is the page still recognisably this brand, or could it be any competitor's? (The reference's "Zombie UI" test.)
 - **Default tropes:** cream background with an arbitrary serif heading, three equal cards with icons, gradient blobs, a hero with a centred headline + two buttons + a floating screenshot, uniform rounded-xl everything, purple-to-blue gradients. Each one present without a reason in the brief is a finding.
-- **Hierarchy:** where does the eye land first, second, third? Does that order match the one job? One screenshot, squint, say it in three words.
+- **Hierarchy:** where does the eye land first, second, third? Does that order match the one job? Run `tools/sightline.py` on the hero screenshot (phone viewport) and quote its three regions; then squint yourself and say whether you agree. The script's rank 1 should be the one job's element or the headline that leads to it; anything else is a finding with the map as evidence.
 - **The three words:** for each adjective in the brief, point at the element that delivers it. For each anti-word, point at anything that leaks it. An adjective with no element delivering it is a finding.
 - **Composition:** rhythm of sections (not all the same height and density), whitespace with intent, alignment to a grid, image and illustration treatment consistent, colour used to mean something.
 - **Typography:** the type does real work (contrast of size and weight, measure 45–75 characters, tight headings, comfortable body), and the pairing fits the visual world.
