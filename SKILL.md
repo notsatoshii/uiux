@@ -18,7 +18,9 @@ Read [loop/orchestration.md](loop/orchestration.md) before doing anything. It is
 
 ## Taste
 
-The brief says what the surface is for. `taste/` says what good looks like: the project's own `taste.md` first, then the curated references, the slop list and the known-good defaults, then the installed taste skills, then Mobbin for calibration. Critics 05–09 and the builder load it in that order before they look at the surface (`taste/README.md`).
+The brief says what the surface is for. Taste says what good looks like, at three levels: the project's `taste.md`, then the owner's taste file (`~/.claude/uiux/taste.md` or `$UIUX_TASTE`, private, across all their projects), then the skill's own `taste/` (curated references, the slop list, known-good defaults), then the installed taste skills, then Mobbin for calibration. Critics 05–09 and the builder load it in that order before they look at the surface (`taste/README.md`).
+
+The owner's file is built by the skill, not typed by hand: `/uiux taste init` seeds it (import what the host knows, then a ten-round pairs interview shown visually); every run appends the owner's reactions to previews, quoted and dated (`taste/owner-taste.md`); `/uiux taste add "<note>"`, `show` and `promote` manage it. If the file does not exist, the first run offers `taste init` once and continues without it.
 
 ## Rules that never bend
 
@@ -29,6 +31,11 @@ The brief says what the surface is for. `taste/` says what good looks like: the 
 - House rules win over this skill. If `uiux.md` or CLAUDE.md says copy may not change, or text must be in a language and register, every critic and the builder obey it.
 - The loop stops on its own: bar reached, plateau, cycle cap or token cap. It never asks "continue?" mid-loop. It does stop for the user's own calls: copy, brand picks, money, facts.
 - Report faithfully. A failed check is reported as failed, with the evidence.
+
+## Subcommands
+
+- `/uiux taste init` seed the owner's taste file (import + pairs interview).
+- `/uiux taste add "<note>"` append a line. `/uiux taste show` print it. `/uiux taste promote` move repeated lines to Standing rules.
 
 ## Flags
 

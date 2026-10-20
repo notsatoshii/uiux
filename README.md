@@ -54,12 +54,13 @@ Each rubric has three written examples: what a 4 looks like, what a 7 looks like
 
 A brief tells the critics what the page is for. It does not tell them what good looks like. The `taste/` folder does. The critics for aesthetic, visuals, motion, delight and micro-craft, and the builder, load it before they look at the page. In this order:
 
-1. **Your `taste.md`** in the project root: what you like and hate, with examples. It wins. Copy [examples/taste.md](examples/taste.md) to start.
-2. **[taste/references.md](taste/references.md)**: products and pages whose craft has held up, by mode, each with one line on why. Linear, Stripe, Toss, Vercel, Family, Raycast, Apple, and the galleries. A bar, never a layout to copy.
-3. **[taste/slop.md](taste/slop.md)**: the tells of AI-default design. Each one on the page without a reason in the brief is a finding. Three on one screen cap the aesthetic score at 5.
-4. **[taste/defaults.md](taste/defaults.md)**: known-good type, spacing, colour, shadow and motion choices for when the brief is silent.
-5. **Installed taste skills**, when present: impeccable's craft floor, design-taste-frontend, high-end-visual-design.
-6. **Mobbin**, when connected: real screens of the same kind of page, to calibrate density and hierarchy. Mechanics only.
+1. **The project's `taste.md`** in the project root: overrides for this one project. Copy [examples/taste.md](examples/taste.md) to start.
+2. **Your own taste file**, at `~/.claude/uiux/taste.md`, private, used in every project you run the skill in. The skill builds it for you: `/uiux taste init` imports what Claude already knows about your picks and then shows you ten visual pairs to choose from. After that, every run appends your reactions to previews, in your words, with the date and the project. Lines you repeat become standing rules that the critics quote. See [taste/owner-taste.md](taste/owner-taste.md) and [examples/owner-taste.md](examples/owner-taste.md).
+3. **[taste/references.md](taste/references.md)**: products and pages whose craft has held up, by mode, each with one line on why. Linear, Stripe, Toss, Vercel, Family, Raycast, Apple, and the galleries. A bar, never a layout to copy.
+4. **[taste/slop.md](taste/slop.md)**: the tells of AI-default design. Each one on the page without a reason in the brief is a finding. Three on one screen cap the aesthetic score at 5.
+5. **[taste/defaults.md](taste/defaults.md)**: known-good type, spacing, colour, shadow and motion choices for when the brief is silent.
+6. **Installed taste skills**, when present: impeccable's craft floor, design-taste-frontend, high-end-visual-design.
+7. **Mobbin**, when connected: real screens of the same kind of page, to calibrate density and hierarchy. Mechanics only.
 
 The aesthetic critic must name the reference the page comes closest to, and the gap. "Closest to nothing" is a finding on its own.
 
@@ -160,12 +161,13 @@ interview/brief-template.md
 critics/00-shared.md       what every critic gets, the output JSON, the severity rules
 critics/01..09-*.md        one lens each, with the 4 / 7 / 9 examples
 builder/fix.md             the rules for the single writer
-taste/                     README.md (load order) · references.md · slop.md · defaults.md
+taste/                     README.md (load order) · owner-taste.md · references.md · slop.md · defaults.md
 integrations/              mobbin.md · motion-assets.md (HyperFrames, Remotion) · lottie.md
 tools/                     the three scripts and the video-to-spec procedure
 templates/cycle-report.md
 examples/uiux.md           a house-rules file to copy
 examples/taste.md          a project taste file to copy
+examples/owner-taste.md    what your own taste file looks like after a few runs
 docs/                      the diagrams and sources.md
 ```
 
