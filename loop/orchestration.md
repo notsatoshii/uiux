@@ -78,6 +78,6 @@ Keep a running list, during the run, of every reaction the owner gave about the 
 
 ## 4. Report
 
-`docs/design/<surface>/final.md`: the stop reason, the score table across cycles, open items, the waiting-on-user list, the ideas list from critic 08 with one line each, and the commands to reproduce the screenshots. In chat: five lines at most, with the stop reason first.
+`docs/design/<surface>/final.md`: the stop reason, the score table across cycles, open items, the decisions the loop made (once, deduped), proposed rewrites of locked copy and needs-data placeholders, the ideas list from critic 08 with one line each, and the commands to reproduce the screenshots. In chat: five lines at most, with the stop reason first.
 
 Commit only if the house rules or the user said so; otherwise leave the work uncommitted and say so.
