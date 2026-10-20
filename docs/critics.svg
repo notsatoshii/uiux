@@ -1,37 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="330" viewBox="0 0 820 330" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
   <style>
-    .g1{fill:#eef2f8;stroke:#7c8696;stroke-width:1.5}
-    .g2{fill:#e6f4ee;stroke:#2f8f62;stroke-width:1.5}
-    .g3{fill:#fff3d6;stroke:#c9931a;stroke-width:1.5}
-    .t{fill:#1f2430;font-weight:600}
-    .s{fill:#4a5262;font-size:11.5px}
-    .h{fill:#1f2430;font-weight:700;font-size:13px}
-    .gate{fill:#4a5262;font-size:12px;font-style:italic}
-    .line{stroke:#7c8696;stroke-width:1.5;stroke-dasharray:5 4}
+    .bg{fill:#ffffff;stroke:#d5dae2;stroke-width:1}
+    .g1{fill:#eef2f8;stroke:#5b6472;stroke-width:1.6}
+    .g2{fill:#e3f3ea;stroke:#2f8f62;stroke-width:1.6}
+    .g3{fill:#fff1cf;stroke:#b8860b;stroke-width:1.6}
+    .t{fill:#1b202a;font-weight:700;font-size:17px}
+    .s{fill:#3d4552;font-size:13.5px}
+    .h{fill:#1b202a;font-weight:700;font-size:20px}
+    .gate{fill:#3d4552;font-size:14px;font-style:italic}
+    .line{stroke:#5b6472;stroke-width:1.6;stroke-dasharray:6 5}
   </style>
-  <!-- group 1 -->
-  <text class="h" x="20" y="28">Every cycle</text>
+  <rect class="bg" x="0.5" y="0.5" width="959" height="469" rx="16"/>
+  <text class="h" x="32" y="42">The nine critics</text>
+
+  <text class="gate" x="32" y="72">Every cycle</text>
   <g>
-    <rect class="g1" x="20" y="40" width="150" height="48" rx="10"/><text class="t" x="30" y="60">01 best practices</text><text class="s" x="30" y="78">a11y · responsive · perf</text>
-    <rect class="g1" x="180" y="40" width="150" height="48" rx="10"/><text class="t" x="190" y="60">02 references</text><text class="s" x="190" y="78">mechanics, receipts, Mobbin</text>
-    <rect class="g1" x="340" y="40" width="150" height="48" rx="10"/><text class="t" x="350" y="60">03 design system</text><text class="s" x="350" y="78">tokens · tooltips · copy</text>
-    <rect class="g1" x="500" y="40" width="150" height="48" rx="10"/><text class="t" x="510" y="60">04 functionality</text><text class="s" x="510" y="78">every feature, every state</text>
-    <rect class="g1" x="660" y="40" width="140" height="48" rx="10"/><text class="t" x="670" y="60">05 aesthetic</text><text class="s" x="670" y="78">brand, sightline, no slop</text>
+    <rect class="g1" x="32" y="84" width="170" height="70" rx="12"/><text class="t" x="46" y="112">01 best practices</text><text class="s" x="46" y="136">a11y · responsive · perf</text>
+    <rect class="g1" x="214" y="84" width="170" height="70" rx="12"/><text class="t" x="228" y="112">02 references</text><text class="s" x="228" y="136">mechanics, receipts</text>
+    <rect class="g1" x="396" y="84" width="170" height="70" rx="12"/><text class="t" x="410" y="112">03 design system</text><text class="s" x="410" y="136">tokens · tooltips · copy</text>
+    <rect class="g1" x="578" y="84" width="170" height="70" rx="12"/><text class="t" x="592" y="112">04 functionality</text><text class="s" x="592" y="136">every feature, state</text>
+    <rect class="g1" x="760" y="84" width="168" height="70" rx="12"/><text class="t" x="774" y="112">05 aesthetic</text><text class="s" x="774" y="136">brand, taste, no slop</text>
   </g>
 
-  <line class="line" x1="20" y1="118" x2="800" y2="118"/>
-  <text class="gate" x="20" y="140">gate: 04 functionality scored 8 or more</text>
-
-  <!-- group 2 -->
+  <line class="line" x1="32" y1="188" x2="928" y2="188"/>
+  <text class="gate" x="32" y="216">After 04 functionality scores 8 or more</text>
   <g>
-    <rect class="g2" x="20" y="152" width="230" height="48" rx="10"/><text class="t" x="30" y="172">06 visualize</text><text class="s" x="30" y="190">numbers and text → visuals, no invented data</text>
-    <rect class="g2" x="260" y="152" width="280" height="48" rx="10"/><text class="t" x="270" y="172">07 motion</text><text class="s" x="270" y="190">A entrance + data · B hover, press, focus, state fx</text>
-    <rect class="g2" x="550" y="152" width="250" height="48" rx="10"/><text class="t" x="560" y="172">08 delight + ideas</text><text class="s" x="560" y="190">signature move, voice; ideas never auto-built</text>
+    <rect class="g2" x="32" y="228" width="280" height="70" rx="12"/><text class="t" x="46" y="256">06 visualize</text><text class="s" x="46" y="280">text and numbers → visuals, nothing invented</text>
+    <rect class="g2" x="324" y="228" width="312" height="70" rx="12"/><text class="t" x="338" y="256">07 motion</text><text class="s" x="338" y="280">A entrance + data · B hover, press, focus, state</text>
+    <rect class="g2" x="648" y="228" width="280" height="70" rx="12"/><text class="t" x="662" y="256">08 delight + ideas</text><text class="s" x="662" y="280">signature move, voice; ideas never built</text>
   </g>
 
-  <line class="line" x1="20" y1="230" x2="800" y2="230"/>
-  <text class="gate" x="20" y="252">gate: every other critic within one point of the bar</text>
-
-  <!-- group 3 -->
-  <rect class="g3" x="20" y="264" width="780" height="48" rx="10"/><text class="t" x="30" y="284">09 micro-craft</text><text class="s" x="30" y="302">radii, shadow tint, icon weight, optical alignment, light direction, motion physics — the numbered list, one level deeper than the visitor notices</text>
+  <line class="line" x1="32" y1="332" x2="928" y2="332"/>
+  <text class="gate" x="32" y="360">After every other critic is within one point of the bar</text>
+  <rect class="g3" x="32" y="372" width="896" height="70" rx="12"/><text class="t" x="46" y="400">09 micro-craft</text><text class="s" x="46" y="424">radii, shadow tint, icon weight, optical alignment, light direction, motion physics: one level deeper than the visitor notices</text>
 </svg>

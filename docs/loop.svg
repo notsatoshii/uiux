@@ -1,56 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
   <defs>
-    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7c8696"/></marker>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5b6472"/></marker>
   </defs>
   <style>
-    .box{fill:#eef2f8;stroke:#7c8696;stroke-width:1.5;rx:12}
-    .hot{fill:#ffe9e2;stroke:#d93d22}
-    .t{fill:#1f2430;font-weight:600}
-    .s{fill:#4a5262;font-size:12px}
-    .l{stroke:#7c8696;stroke-width:1.5;fill:none;marker-end:url(#a)}
-    .lab{fill:#4a5262;font-size:12px;font-style:italic}
+    .bg{fill:#ffffff;stroke:#d5dae2;stroke-width:1}
+    .box{fill:#eef2f8;stroke:#5b6472;stroke-width:1.6}
+    .hot{fill:#ffe3da;stroke:#d93d22}
+    .t{fill:#1b202a;font-weight:700;font-size:18px}
+    .s{fill:#3d4552;font-size:14px}
+    .l{stroke:#5b6472;stroke-width:2;fill:none;marker-end:url(#a)}
+    .lab{fill:#3d4552;font-size:14px;font-style:italic}
+    .h{fill:#1b202a;font-weight:700;font-size:20px}
   </style>
+  <rect class="bg" x="0.5" y="0.5" width="959" height="399" rx="16"/>
+  <text class="h" x="32" y="42">The loop</text>
+
   <!-- row 1 -->
-  <rect class="box" x="20" y="40" width="150" height="64" rx="12"/>
-  <text class="t" x="95" y="66" text-anchor="middle">1 Interview</text>
-  <text class="s" x="95" y="86" text-anchor="middle">questions → brief.md</text>
+  <rect class="box" x="32" y="70" width="190" height="80" rx="14"/>
+  <text class="t" x="127" y="103" text-anchor="middle">1 Interview</text>
+  <text class="s" x="127" y="128" text-anchor="middle">questions → brief.md</text>
 
-  <rect class="box" x="210" y="40" width="150" height="64" rx="12"/>
-  <text class="t" x="285" y="66" text-anchor="middle">2 First build</text>
-  <text class="s" x="285" y="86" text-anchor="middle">only if nothing exists</text>
+  <rect class="box" x="262" y="70" width="190" height="80" rx="14"/>
+  <text class="t" x="357" y="103" text-anchor="middle">2 First build</text>
+  <text class="s" x="357" y="128" text-anchor="middle">only if nothing exists</text>
 
-  <rect class="box" x="400" y="40" width="150" height="64" rx="12"/>
-  <text class="t" x="475" y="66" text-anchor="middle">3 Screenshots</text>
-  <text class="s" x="475" y="86" text-anchor="middle">phone + desktop, states</text>
+  <rect class="box" x="492" y="70" width="190" height="80" rx="14"/>
+  <text class="t" x="587" y="103" text-anchor="middle">3 Screenshots</text>
+  <text class="s" x="587" y="128" text-anchor="middle">phone, desktop, states</text>
 
-  <rect class="box" x="590" y="40" width="210" height="64" rx="12"/>
-  <text class="t" x="695" y="66" text-anchor="middle">4 Critics, in parallel</text>
-  <text class="s" x="695" y="86" text-anchor="middle">9 lenses, each scores 1–10</text>
+  <rect class="box" x="722" y="70" width="206" height="80" rx="14"/>
+  <text class="t" x="825" y="103" text-anchor="middle">4 Critics</text>
+  <text class="s" x="825" y="128" text-anchor="middle">9 in parallel, scores 1–10</text>
 
-  <path class="l" d="M170 72H210"/><path class="l" d="M360 72H400"/><path class="l" d="M550 72H590"/>
+  <path class="l" d="M222 110H262"/><path class="l" d="M452 110H492"/><path class="l" d="M682 110H722"/>
 
   <!-- row 2 -->
-  <rect class="box" x="590" y="170" width="210" height="64" rx="12"/>
-  <text class="t" x="695" y="196" text-anchor="middle">5 Merge and rank</text>
-  <text class="s" x="695" y="216" text-anchor="middle">severity 1 → 2 → 3</text>
+  <rect class="box" x="722" y="250" width="206" height="80" rx="14"/>
+  <text class="t" x="825" y="283" text-anchor="middle">5 Merge, rank</text>
+  <text class="s" x="825" y="308" text-anchor="middle">severity 1 → 2 → 3</text>
 
-  <rect class="box" x="400" y="170" width="150" height="64" rx="12"/>
-  <text class="t" x="475" y="196" text-anchor="middle">6 One builder</text>
-  <text class="s" x="475" y="216" text-anchor="middle">fixes the list, alone</text>
+  <rect class="box" x="492" y="250" width="190" height="80" rx="14"/>
+  <text class="t" x="587" y="283" text-anchor="middle">6 One builder</text>
+  <text class="s" x="587" y="308" text-anchor="middle">fixes the list, alone</text>
 
-  <rect class="box hot" x="210" y="170" width="150" height="64" rx="12"/>
-  <text class="t" x="285" y="196" text-anchor="middle">7 Score</text>
-  <text class="s" x="285" y="216" text-anchor="middle">bar met? plateau? cap?</text>
+  <rect class="box hot" x="262" y="250" width="190" height="80" rx="14"/>
+  <text class="t" x="357" y="283" text-anchor="middle">7 Score</text>
+  <text class="s" x="357" y="308" text-anchor="middle">bar? plateau? cap?</text>
 
-  <rect class="box" x="20" y="170" width="150" height="64" rx="12"/>
-  <text class="t" x="95" y="196" text-anchor="middle">8 Report</text>
-  <text class="s" x="95" y="216" text-anchor="middle">cycle-N.md, final.md</text>
+  <rect class="box" x="32" y="250" width="190" height="80" rx="14"/>
+  <text class="t" x="127" y="283" text-anchor="middle">8 Report</text>
+  <text class="s" x="127" y="308" text-anchor="middle">cycle-N.md, final.md</text>
 
-  <path class="l" d="M695 104V170"/><path class="l" d="M590 202H550"/><path class="l" d="M400 202H360"/>
-  <path class="l" d="M210 202H170"/>
-  <text class="lab" x="190" y="252" text-anchor="middle">stop</text>
+  <path class="l" d="M825 150V250"/><path class="l" d="M722 290H682"/><path class="l" d="M492 290H452"/>
+  <path class="l" d="M262 290H222"/>
+  <text class="lab" x="242" y="350" text-anchor="middle">stop</text>
 
   <!-- loop back -->
-  <path class="l" d="M285 170V140Q285 128 297 128H463Q475 128 475 116V104"/>
-  <text class="lab" x="380" y="122" text-anchor="middle">not yet: next cycle</text>
+  <path class="l" d="M357 250V206Q357 190 373 190H571Q587 190 587 174V150"/>
+  <text class="lab" x="472" y="182" text-anchor="middle">not yet → next cycle</text>
 </svg>

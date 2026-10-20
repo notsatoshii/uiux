@@ -121,6 +121,8 @@ These add evidence and assets. The loop works without them and says so in its re
 | [Mobbin](https://mobbin.com) | Real app and web screens for the references critic and the interview | In Claude: `+` → Connectors → Browse → **Mobbin** → Connect. Needs a paid Mobbin account. In the terminal: `npx -y mobbin-mcp auth`, then `claude mcp add mobbin -- npx -y mobbin-mcp`. |
 | [HyperFrames](https://github.com/heygen-com/hyperframes) | Generated motion assets from HTML, rendered to video | Skills: `npx skills add heygen-com/hyperframes`. Or the connector **HyperFrames by HeyGen**. Needs Node 22+ and FFmpeg. |
 | [Remotion](https://www.remotion.dev/docs/ai/claude-code) | Generated motion assets from React | Follow the Remotion docs for the current skills install. Use it for Next and React projects. |
+| [motion-anything](https://github.com/nexu-io/motion-anything) | ~400 motion recipes and `MOTION-SPEC.md`, the motion standard the motion critic uses | `git clone https://github.com/nexu-io/motion-anything.git`. No install, Node 18+. Link `skills/motion-anything` and `skills/gsap` into `~/.claude/skills/`. See [integrations/motion-anything.md](integrations/motion-anything.md). |
+| [Open Design](https://github.com/nexu-io/open-design) | A local design workspace with 100+ skills, design systems, and HyperFrames rendering; an `od` CLI and an MCP server | `git clone`, `pnpm install`, `pnpm tools-dev run web`, then `od mcp install claude`. Node 24, pnpm 10.33. See [integrations/open-design.md](integrations/open-design.md). |
 | [Lottie](https://lottiefiles.com) | Small JSON animations for feedback moments | No connector. The builder uses `lottie-web` or `@lottiefiles/dotlottie-web` and files from your project or the free library. |
 | A browser tool | Screenshots per viewport and state | The Claude desktop app browser pane, a Playwright MCP, or the `playwright-cli` skill. Without one, the critics read code only. |
 
@@ -162,7 +164,7 @@ critics/00-shared.md       what every critic gets, the output JSON, the severity
 critics/01..09-*.md        one lens each, with the 4 / 7 / 9 examples
 builder/fix.md             the rules for the single writer
 taste/                     README.md (load order) · owner-taste.md · references.md · slop.md · defaults.md
-integrations/              mobbin.md · motion-assets.md (HyperFrames, Remotion) · lottie.md
+integrations/              mobbin.md · motion-assets.md (HyperFrames, Remotion) · motion-anything.md · open-design.md · lottie.md
 tools/                     the three scripts and the video-to-spec procedure
 templates/cycle-report.md
 examples/uiux.md           a house-rules file to copy

@@ -1,37 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="200" viewBox="0 0 820 200" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
   <style>
-    .box{fill:#eef2f8;stroke:#7c8696;stroke-width:1.5}
-    .ok{fill:#e6f4ee;stroke:#2f8f62}
-    .t{fill:#1f2430;font-weight:600}
-    .s{fill:#4a5262;font-size:12px}
-    .h{fill:#1f2430;font-weight:700}
+    .bg{fill:#ffffff;stroke:#d5dae2;stroke-width:1}
+    .box{fill:#eef2f8;stroke:#5b6472;stroke-width:1.6}
+    .ok{fill:#e3f3ea;stroke:#2f8f62}
+    .t{fill:#1b202a;font-weight:700;font-size:18px}
+    .s{fill:#3d4552;font-size:14px}
+    .h{fill:#1b202a;font-weight:700;font-size:20px}
   </style>
-  <text class="h" x="20" y="26">The loop stops by itself when one of these is true</text>
-  <rect class="box ok" x="20" y="44" width="185" height="130" rx="12"/>
-  <text class="t" x="32" y="68">Bar</text>
-  <text class="s" x="32" y="90">every active critic</text>
-  <text class="s" x="32" y="108">scores ≥ bar (default 8)</text>
-  <text class="s" x="32" y="126">and no severity-1</text>
-  <text class="s" x="32" y="144">finding is open</text>
+  <rect class="bg" x="0.5" y="0.5" width="959" height="259" rx="16"/>
+  <text class="h" x="32" y="42">The loop stops by itself when one of these is true</text>
 
-  <rect class="box" x="218" y="44" width="185" height="130" rx="12"/>
-  <text class="t" x="230" y="68">Plateau</text>
-  <text class="s" x="230" y="90">most critics say</text>
-  <text class="s" x="230" y="108">"same" or "worse"</text>
-  <text class="s" x="230" y="126">two cycles in a row</text>
-  <text class="s" x="230" y="144">(blind comparison)</text>
+  <rect class="box ok" x="32" y="64" width="212" height="166" rx="14"/>
+  <text class="t" x="48" y="94">Bar</text>
+  <text class="s" x="48" y="122">every active critic</text>
+  <text class="s" x="48" y="144">scores ≥ bar (default 8)</text>
+  <text class="s" x="48" y="166">and no severity-1</text>
+  <text class="s" x="48" y="188">finding is open</text>
 
-  <rect class="box" x="416" y="44" width="185" height="130" rx="12"/>
-  <text class="t" x="428" y="68">Cap</text>
-  <text class="s" x="428" y="90">cycle count reaches</text>
-  <text class="s" x="428" y="108">--cycles (default 6)</text>
-  <text class="s" x="428" y="126">or the token budget</text>
-  <text class="s" x="428" y="144">in the house rules</text>
+  <rect class="box" x="260" y="64" width="212" height="166" rx="14"/>
+  <text class="t" x="276" y="94">Plateau</text>
+  <text class="s" x="276" y="122">most critics say</text>
+  <text class="s" x="276" y="144">"same" or "worse"</text>
+  <text class="s" x="276" y="166">two cycles in a row</text>
+  <text class="s" x="276" y="188">(blind comparison)</text>
 
-  <rect class="box" x="614" y="44" width="185" height="130" rx="12"/>
-  <text class="t" x="626" y="68">Your call</text>
-  <text class="s" x="626" y="90">the only blockers left</text>
-  <text class="s" x="626" y="108">need you: copy, brand</text>
-  <text class="s" x="626" y="126">picks, facts, money.</text>
-  <text class="s" x="626" y="144">It never asks "continue?"</text>
+  <rect class="box" x="488" y="64" width="212" height="166" rx="14"/>
+  <text class="t" x="504" y="94">Cap</text>
+  <text class="s" x="504" y="122">cycle count reaches</text>
+  <text class="s" x="504" y="144">--cycles (default 6),</text>
+  <text class="s" x="504" y="166">or the token budget</text>
+  <text class="s" x="504" y="188">in the house rules</text>
+
+  <rect class="box" x="716" y="64" width="212" height="166" rx="14"/>
+  <text class="t" x="732" y="94">Your call</text>
+  <text class="s" x="732" y="122">the only blockers left</text>
+  <text class="s" x="732" y="144">need you: copy, brand</text>
+  <text class="s" x="732" y="166">picks, facts, money.</text>
+  <text class="s" x="732" y="188">It never asks "continue?"</text>
 </svg>
