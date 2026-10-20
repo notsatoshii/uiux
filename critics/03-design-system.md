@@ -32,7 +32,7 @@ Every tooltip must be reachable on touch (tap) and keyboard (focus) and be annou
 
 ## Scan C: copy clarity
 
-Not copywriting; clarity. Labels say what happens ("Save and continue", not "Submit"); error messages say what to do; empty states say what will appear and how to start; buttons are verbs; nothing requires the visitor to guess. Copy obeys the house rules (language, register, forbidden words). When the house rules say copy may not change, clarity findings go to `waiting_on_user`, not findings.
+Not copywriting; clarity. Labels say what happens ("Save and continue", not "Submit"); error messages say what to do; empty states say what will appear and how to start; buttons are verbs; nothing requires the visitor to guess. Copy obeys the house rules (language, register, forbidden words). When the house rules say copy may not change, clarity findings go to `proposed_rewrites`, not findings.
 
 ## Anchors
 

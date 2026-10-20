@@ -48,5 +48,5 @@ surface: <route or file> · mode: <persuade|operate|read|experience> · kind: <n
 ## Accessibility and devices
 viewports: <…> · dark mode: <required|nice|no> · reduced motion: <required> · keyboard: <…> · screen reader: <…>
 
-## Definition of done (approved by the user on <date>)
+## Definition of done (read back to the user on <date>)
 <the one job, the three words, the must-not-change list, the feature list, the bar>

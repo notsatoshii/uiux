@@ -68,7 +68,7 @@ The aesthetic critic must name the reference the page comes closest to, and the 
 
 ![Stop rules: bar, plateau, cap, your call](docs/stop-rules.svg)
 
-The loop never asks "continue?". It stops for your decisions only: copy, brand picks, facts, money.
+After the interview the loop never asks you anything. It makes the calls itself, logs them, and lists them in `final.md` for you to review. It never invents facts or prices (they stay as visible placeholders) and never rewrites copy you locked (it lists proposed rewrites instead).
 
 ## Set up
 
@@ -179,7 +179,7 @@ docs/                      the diagrams and sources.md
 - A critic sees the brief, the screenshots, the code and the last cycle's screenshots. It never sees the builder's reasoning.
 - No invented facts. No made-up numbers, prices, quotes or claims. A visual that needs data the project does not have logs `needs data:`.
 - Your house rules win over the skill's rules.
-- The loop stops by itself. It stops for your calls only.
+- The loop stops by itself: bar, plateau or cap. It never stops to ask you.
 - The report says what failed, with the evidence.
 
 ## Where the ideas come from

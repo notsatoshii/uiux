@@ -23,8 +23,11 @@ date: <YYYY-MM-DD HH:MM> · bar: <N> · active critics: <ids> · screenshots: do
 ### Open (carried to next cycle)
 - [sev] [critic] element · issue · why still open
 
-### Waiting on user
-- element · what is needed · why it is their call (copy rule, brand pick, fact, money)
+### Decisions the loop made
+- element · the call · option chosen · why (reviewed in final.md, never asked mid-run)
+
+### Proposed rewrites and needs-data placeholders
+- element · current → proposed (locked copy, not applied) | needs data: what is missing
 
 ## Builder's note
 <what it changed, conflicts and how resolved, checks run and results, what it noticed>
@@ -33,4 +36,4 @@ date: <YYYY-MM-DD HH:MM> · bar: <N> · active critics: <ids> · screenshots: do
 - <what> · <why> · <cost>
 
 ## Decision
-<continue to cycle N+1 | stop: bar | stop: plateau | stop: cap | stop: user's call> · <one line of reason>
+<continue to cycle N+1 | stop: bar | stop: plateau | stop: cap> · <one line of reason>

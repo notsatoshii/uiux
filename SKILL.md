@@ -11,7 +11,7 @@ Read [loop/orchestration.md](loop/orchestration.md) before doing anything. It is
 ## Phases
 
 1. **Intake** (you, no questions): find the surface, decide new build vs existing, read the project's house rules (`uiux.md` in the project root, then CLAUDE.md), find an existing brief. Facts come from the filesystem, never from the user.
-2. **Interview** (`interview/questions.md`): rounds of numbered questions with a recommended answer each, in the style of the `grilling` skill. Ends with a definition of done the user approves. Output: `docs/design/<surface>/brief.md` from `interview/brief-template.md`. Skipped when a brief exists and the user did not ask for a new one; then ask one question: "Anything changed since this brief?"
+2. **Interview** (`interview/questions.md`): rounds of numbered questions with a recommended answer each, in the style of the `grilling` skill. Ends by reading back the definition of done, writing `docs/design/<surface>/brief.md` from `interview/brief-template.md`, and starting; no approval step. Skipped when a brief exists and the user did not ask for a new one; the brief is used as is.
 3. **First build** (only when the surface does not exist yet): build from the brief with the project's build-time skills (`impeccable`, `design-taste-frontend` or whatever is installed), then screenshot.
 4. **Cycles** (`loop/orchestration.md`): parallel critics → merged ranked findings → one builder → screenshots → score → repeat or stop. Nine critics in `critics/`, gated by progress: 01–05 always; 06 visualize, 07 motion, 08 delight once functionality holds ≥ 8; 09 micro-craft once everything else is within one point of the bar. Critics use the scripts in `tools/` for evidence and the connectors in `integrations/` (Mobbin, HyperFrames or Remotion, Lottie) when present.
 5. **Report**: `docs/design/<surface>/cycle-N.md` per cycle, `docs/design/<surface>/final.md` at the end, and a five-line summary in chat.
@@ -29,7 +29,7 @@ The owner's file is built by the skill, not typed by hand: `/uiux taste init` se
 - Scores need anchors. Every critic rubric in `critics/` carries what a 4, a 7 and a 9 look like. A score without a quoted anchor is invalid; re-run that critic.
 - No invented facts: no made-up numbers, claims, curriculum, prices, testimonials. A visual that needs data the project does not have logs `needs data:` instead.
 - House rules win over this skill. If `uiux.md` or CLAUDE.md says copy may not change, or text must be in a language and register, every critic and the builder obey it.
-- The loop stops on its own: bar reached, plateau, cycle cap or token cap. It never asks "continue?" mid-loop. It does stop for the user's own calls: copy, brand picks, money, facts.
+- The loop stops on its own: bar reached, plateau, cycle cap or token cap. After the interview it never asks the user anything: not "continue?", not "approve?", not "which option?". When a call is needed (a brand pick, which of two options, a missing asset) it takes the safest option that follows the brief and the design system, logs it as a decision the loop made, and keeps going. Facts, numbers and prices are never invented: they stay as visible `needs data:` placeholders. Copy under a "copy may not change" rule stays unchanged; proposed rewrites are listed. Both are reviewed in `final.md` after the run.
 - Report faithfully. A failed check is reported as failed, with the evidence.
 
 ## Subcommands

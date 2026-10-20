@@ -26,7 +26,7 @@ For each: the text targeted (quoted), the visual type, a one-line sketch (axes, 
 
 Score on whether each visual earns its place, not on count. A landing page with thirty charts is a dashboard. The rule: every number and comparison on the page is visual, and no visual could be removed without losing meaning.
 
-In a redesign under a "copy may not change" rule, a visual sits beside the original text; text it would replace goes to `waiting_on_user`.
+In a redesign under a "copy may not change" rule, a visual sits beside the original text; text it would replace goes to `proposed_rewrites`.
 
 ## Anchors
 

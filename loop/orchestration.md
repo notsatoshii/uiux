@@ -14,7 +14,7 @@ The main session is the orchestrator. It never designs and never fixes; it runs 
 
 ## 1. Interview
 
-Run `interview/questions.md` with the `grilling` skill's round format. Skip questions whose answer is already in the brief, the house rules, PRODUCT.md or DESIGN.md. End with the definition of done; wait for the user to approve it; write the brief. A `--dry` run stops here.
+Run `interview/questions.md` with the `grilling` skill's round format. Skip questions whose answer is already in the brief, the house rules, PRODUCT.md or DESIGN.md. End by reading back the definition of done, then write the brief and start; there is no approval step. A `--dry` run stops here.
 
 ## 2. First build (new surfaces only)
 
@@ -54,7 +54,7 @@ Each critic returns the JSON block defined in `00-shared.md`. A result without q
 
 Combine findings. Dedupe by element + issue. Rank: severity 1 (broken, wrong, violates a house rule) → 2 (hurts the goal) → 3 (polish). Within a severity, lower-numbered critic first. Drop suggestions (critic 08's "ideas" list) from the fix list; they go to the report only.
 
-Needs-user items (copy changes under a "copy may not change" rule, brand picks, facts, money) go to a `waiting on user` list, never to the builder.
+Calls the loop makes itself, never asking: a brand pick or a choice between options gets the safest option that follows the brief and the design system; a missing fact, number or price stays a visible `needs data:` placeholder; nothing paid is bought. Each call is logged under `decisions the loop made` (call, option chosen, why, element) and handed to the builder as settled. Copy changes under a "copy may not change" rule are listed as proposed rewrites, never applied.
 
 ### 3.4 Builder, alone
 
@@ -69,7 +69,6 @@ Stop when any of these is true, and say which:
 - **Bar:** every active critic scored ≥ bar this cycle, and no severity-1 finding is open.
 - **Plateau:** a majority of critics said "same" or "worse" two cycles running.
 - **Cap:** cycle N = `--cycles`, or the token budget in the house rules is reached.
-- **User's call:** the only open severity-1 items are in `waiting on user`.
 
 Else cycle N+1.
 

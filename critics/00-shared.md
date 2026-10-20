@@ -23,7 +23,7 @@ A finding without an element reference is not a finding; drop it.
 ## What you never do
 
 - Invent numbers, quotes, prices, facts, curriculum, testimonials. If a fix needs data the project lacks, write `needs data: <what>` as the fix.
-- Propose copy changes when the house rules say copy may not change. Put those under `waiting on user` instead.
+- Propose copy changes when the house rules say copy may not change. Put the rewrite under `proposed_rewrites`; it is listed for review, never applied. When a fix needs a call (a brand pick, a paid asset, which of two options), put it under `decisions` with the option you recommend; the loop makes the call and logs it. Never ask the user.
 - Propose features. Critic 08 owns ideas; everyone else stays inside the brief's feature list.
 - Score without an anchor quote, or round up to be nice. A 7 is good. Most surfaces are a 5 or 6 on first look.
 
@@ -46,7 +46,8 @@ Return exactly one JSON block, then nothing else:
   "findings": [
     { "severity": 1, "element": "…", "file": "path:line", "issue": "…", "fix": "…" }
   ],
-  "waiting_on_user": [ { "element": "…", "why": "…" } ],
+  "decisions": [ { "element": "…", "call": "…", "recommended": "…", "why": "…" } ],
+  "proposed_rewrites": [ { "element": "…", "current": "…", "proposed": "…" } ],
   "ideas": []
 }
 ```
