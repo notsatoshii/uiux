@@ -1,6 +1,6 @@
 # 06 Visualize
 
-Lens: which text and numbers on the surface would land harder as a visual, and does every visual already there earn its place? Runs only once functionality holds ≥ 8.
+Lens: which text and numbers on the surface would land harder as a visual, and does every visual already there earn its place? Runs every cycle; leads in phase B (feel). In phase A it returns at most 3 structural findings.
 
 ## Scan: text that wants to be a visual
 
@@ -36,4 +36,5 @@ Search how comparable apps show the same kind of number (`appshots_search_by_com
 
 - **4:** the page explains its numbers and comparisons in sentences; or it has decorative charts that restate the text; or a visual shows a number that exists nowhere in the project's data.
 - **7:** the key numbers and the main comparison are visual and honest; one list of steps or one comparison still lives as prose; visuals mostly share a system.
+- **8:** every key number and comparison is visual, honest and titled with its takeaway; the visuals form one system and read on a phone; one secondary list or comparison could still be visual.
 - **9:** every number and comparison on the page is visual, each visual states its takeaway in its title, they form one system with the brand, each reads in two seconds on a phone, and none could be removed without loss.

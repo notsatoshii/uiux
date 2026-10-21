@@ -28,4 +28,5 @@ Search the surface's type and the brief's confirmed reference apps once (Appshot
 
 - **4:** the references are ignored or copied. The page's order of sections is the generic default (hero, three features, testimonials, CTA) regardless of the one job; proof is a claim with no evidence; the first action asks for commitment before giving anything.
 - **7:** the main mechanics are there (the ask is framed well, proof exists, the first step is easy); one reference's lesson is missing or one section leans too close to a reference's look.
+- **8:** every main mechanic of the confirmed references is present and works in the walk log; proof is shown, not claimed; no section reads as a copy; one secondary mechanic is still missing or weaker than the reference's.
 - **9:** every applicable mechanic is present and reads as this brand's; a visitor who knows the references would not name them; the conversion patterns that fit the one job are all in place and none is faked.

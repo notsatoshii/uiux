@@ -1,6 +1,6 @@
 # 08 Delight and ideas
 
-Lens: the signature move, personality, and what could be added. The only critic allowed to propose features, and its proposals go to the `ideas` list, which the builder never acts on. Runs only once functionality holds ≥ 8.
+Lens: the signature move, personality, and what could be added. The only critic allowed to propose features, and its proposals go to the `ideas` list, which the builder never acts on. Runs every cycle; leads in phase B (feel). In phase A it returns at most 3 structural findings.
 
 ## Part 1: delight (scored)
 
@@ -17,4 +17,5 @@ Three to seven suggestions, each one line: what, why it serves the one job, cost
 
 - **4:** no signature move though the brief asked for one; generic micro-copy ("Submit", "Error occurred", "No data"); or delight that blocks the job (a splash animation before the content, a modal on arrival).
 - **7:** the signature move works and fits; some micro-copy has a voice; one or two deeper-craft details are off (mismatched radii, grey shadows, icon weight heavier than the type).
+- **8:** the signature move works and is memorable; the micro-copy has the brand's voice throughout; nothing slows the one job; one place where an extra ten seconds is not yet rewarded.
 - **9:** the signature move is the thing people would mention; every small text has the brand's voice; the deeper craft holds everywhere; a visitor who stays an extra ten seconds is rewarded, and one who is in a hurry is never slowed.

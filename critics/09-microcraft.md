@@ -1,6 +1,6 @@
 # 09 Micro-craft (the "Pepsi-bubbling" pass)
 
-Lens: one level deeper than the visitor consciously notices. Runs only in a cycle where every other active critic scored ≥ bar − 1, so it polishes a surface that already works. It produces a numbered checklist, not a score argument: the reference's origin is a 17-point list made in a critique of one small graphic.
+Lens: one level deeper than the visitor consciously notices. Runs only in phase C (craft), so it polishes a surface that already works. It produces a numbered checklist, not a score argument: the reference's origin is a 17-point list made in a critique of one small graphic.
 
 ## Method
 
@@ -27,4 +27,5 @@ The shared JSON, with each list item as a severity-3 finding and the element pin
 
 - **4:** more than 20 items, including shadows in grey, mixed radii, icons heavier than the type.
 - **7:** 8–15 items, none of them systemic; the light direction and radius family hold.
+- **8:** 5–8 items, none systemic; radii, shadows, icon weight and light direction hold everywhere; what is left is detail a designer would fix in one pass.
 - **9:** under 5 items, each a judgement call; nothing a designer would redo.

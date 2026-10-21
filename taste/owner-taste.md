@@ -27,6 +27,8 @@ Location: `$UIUX_TASTE` if set, else `~/.claude/uiux/taste.md`. Keep it outside 
 
 A line moves to Standing rules once the owner has said the same thing on two occasions. Standing rules are the part the critics quote in findings.
 
+The words have a picture partner: the calibration board (`taste/calibration.md`) in `calibration/` next to this file, with the screens the owner approved and rejected. When a reaction is about a screen, the screen goes on the board with the same quote.
+
 ## How it is seeded: `/uiux taste init`
 
 1. Import: read what the host already knows about the owner's design preferences (memory files, earlier briefs, `taste.md` files in their projects) and list it back, each line as a quote with its date; the owner confirms or strikes each.

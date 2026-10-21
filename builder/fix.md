@@ -6,6 +6,8 @@ You are the only writer in this cycle. You get the ranked findings, the brief, t
 
 ## Order
 
+0. Read the cycle's theme first. You get at most 12 findings (plus any severity 1); the rest are carried to the next cycle on purpose. Do these well rather than many badly. When a finding names a problem that patches cannot fix (the same empty card shell on every screen, a hierarchy that buries the one job), make the structural change the finding asks for on the key screen first, then the others; say so in the report.
+0b. A structural cycle (after a direction reopen, `loop/direction.md`) rolls the chosen variant out to every screen; the 12-finding cap does not apply to the roll-out itself.
 1. Severity 1, all of them. Then severity 2, all of them. Then severity 3 as far as the cycle budget allows, in the order given.
 2. One finding at a time; keep each change as small as the fix needs. Do not refactor around it.
 3. When two findings conflict (one critic wants more contrast, another a quieter palette), the brief decides; if the brief is silent, the lower-numbered critic wins, and you note the conflict in your report.
@@ -22,6 +24,7 @@ You are the only writer in this cycle. You get the ranked findings, the brief, t
 ## While fixing
 
 - Use the project's design tokens for every value. If a token is missing, add it to the token file and use it; do not hard-code.
+- Look at the calibration board (`taste/calibration.md`) and the chosen direction in the brief before you make anything new; nothing you add may resemble a rejected image's named failure.
 - Load taste before you make anything new: `taste/README.md` order (the project's `taste.md`, then `references.md`, `slop.md`, `defaults.md`, then the installed taste skills: impeccable's craft-floor, design-taste-frontend, high-end-visual-design). Anything you add must pass `slop.md` and use `defaults.md` where the brief and the tokens are silent.
 - Use the build-time skills the project has (impeccable playbooks, design-taste rules, dataviz rules for charts) for anything new you make.
 - After each severity-1 fix, run the project's checks (lint, typecheck, tests, build) if they exist. A fix that breaks the build is not a fix.

@@ -14,46 +14,57 @@ uiux is a skill for [Claude Code](https://claude.com/claude-code). You type `/ui
 
 When you ask an AI for a page, the AI gives you the average page on the internet. A cream background. Three cards. A gradient. It looks finished in ninety seconds. Nobody checks if it is good.
 
-uiux fixes this in two steps:
+uiux fixes this in three steps:
 
 1. **Ask first.** The skill asks you what the page is for, who uses it, how it should feel, and what it must never look like. The answers become a written brief. Every later step must obey the brief.
-2. **Check after.** Critics read the brief, the screenshots and the code. Each critic gives a score from 1 to 10. The critic must quote the written example for that score. A builder fixes the list. The loop runs again. The loop stops by itself.
+2. **Pick a direction from pictures.** Before any loop, the skill builds two or three real versions of the key screen, each a different visual world. You see them side by side with screens of the best apps in the same category, and you pick one. Words like "regal" or "bold" are pinned to a picture first, so they cannot turn into decoration.
+3. **Check with evidence, then fix a little at a time.** Every cycle, a script captures every state of the page (empty, long names, loading, error) and an agent clicks through your tasks in a real browser. Nine critics read that evidence and score against written examples and against screens you approved and rejected before. One builder fixes at most twelve findings, around one theme. The loop stops by itself.
 
 ## How the loop works
 
 ![The loop: interview, first build, screenshots, critics, merge, builder, score, report](docs/loop.svg)
 
-1. **Interview.** Short rounds of questions. Each question has a recommended answer. The result is `docs/design/<surface>/brief.md`.
-2. **First build.** Only when the page does not exist yet.
-3. **Screenshots.** Phone and desktop. Hover, focus, open menu, loading and empty states.
-4. **Critics, in parallel.** Nine lenses. Each returns findings and a score.
-5. **Merge and rank.** Severity 1 (broken or against a rule), 2 (hurts the goal), 3 (polish).
-6. **One builder.** Fixes the list from the top. Only one process writes files.
-7. **Score.** Bar met? Plateau? Cap? If not, go to step 3.
-8. **Report.** `cycle-N.md` for each cycle, `final.md` at the end, five lines in chat.
+1. **Interview.** Short rounds of questions. Each question has a recommended answer.
+2. **Direction.** Two or three working versions of the key screen, side by side with the reference board. You pick one; this is the last question. The result is `docs/design/<surface>/brief.md`.
+3. **First build and state harness.** The build happens only when the page does not exist yet. The harness makes every state of every screen reachable on demand: empty, one, many, long text, loading, slow, error.
+4. **Evidence.** Every state at phone and desktop size. A task walker does your usability tasks in a real browser and logs steps, time, hesitations and dead ends. Typecheck, build, tests, an accessibility scan and Lighthouse run.
+5. **Critics, in parallel.** All nine, every cycle. Each returns findings and a score.
+6. **Merge, rank and cut.** Severity 1 (broken or against a rule), 2 (hurts the goal), 3 (polish). The builder gets at most twelve findings, around one theme. The rest carry over.
+7. **One builder.** Fixes the list from the top. Only one process writes files.
+8. **Score.** Bar met? Plateau? Cap? If not, go to step 4. If the look is stuck at 6 or below twice, the loop reopens the direction itself.
+9. **Report.** `cycle-N.md` and `evidence/cycle-N.md` for each cycle, `final.md` at the end, five lines in chat.
+
+The cycles run in three phases. Each phase gives the builder a different focus:
+
+| phase | cycles (of 6) | leads | what it fixes |
+|---|---|---|---|
+| A structure | 1–2 | functionality, aesthetic, references | the flow works, the hierarchy serves the one job, the direction holds |
+| B feel | 3–4 | visualize, motion, delight | numbers become visuals, motion explains, the signature move lands |
+| C craft | 5–6 | micro-craft, design system, best practices | radii, shadows, alignment, consistency, the last accessibility gaps |
 
 ## The critics
 
-![The nine critics and their gates](docs/critics.svg)
+![The nine critics and the three phases](docs/critics.svg)
 
-| id | what it checks | runs when |
+| id | what it checks | leads in |
 |---|---|---|
-| 01 best practices | semantics, contrast, keyboard, phone layout, speed, loading and error states | every cycle |
-| 02 references | the mechanics of your reference products, never their look; receipts for every claim; the conversion patterns that fit the job | every cycle |
-| 03 design system | tokens and consistency; where a tooltip is needed and where one is too many; labels that say what happens | every cycle |
-| 04 functionality | every feature in the brief works; every state exists; nothing was lost in a redesign | every cycle; gates the next four |
-| 05 aesthetic | your three brand words; the logo test; where the eye lands first; no default AI tropes | every cycle |
-| 06 visualize | numbers and text that should be visuals; visuals that must earn their place; no invented data | after functionality scores 8 |
-| 07 motion | A: entrance and data motion. B: hover, press, focus and state feedback, safe on touch | after functionality scores 8 |
-| 08 delight + ideas | the signature move, voice, craft; plus an ideas list that the builder never builds on its own | after functionality scores 8 |
-| 09 micro-craft | radii, shadow tint, icon weight, optical alignment, light direction, motion physics | when everything else is within one point of the bar |
+| 01 best practices | semantics, contrast, keyboard, phone layout, speed, loading and error states | C craft |
+| 02 references | the mechanics of your reference products, never their look; receipts for every claim; the conversion patterns that fit the job | A structure |
+| 03 design system | tokens and consistency; where a tooltip is needed and where one is too many; labels that say what happens | C craft |
+| 04 functionality | every feature works; the task walker's log has no dead ends; every state holds; nothing was lost in a redesign | A structure |
+| 05 aesthetic | your three brand words; the logo test; where the eye lands first; no default AI tropes; next to your approved screens | A structure |
+| 06 visualize | numbers and text that should be visuals; visuals that must earn their place; no invented data | B feel |
+| 07 motion | A: entrance and data motion. B: hover, press, focus and state feedback, safe on touch | B feel |
+| 08 delight + ideas | the signature move, voice, craft; plus an ideas list that the builder never builds on its own | B feel |
+| 09 micro-craft | radii, shadow tint, icon weight, optical alignment, light direction, motion physics | C craft (runs only then) |
 
-Each rubric has three written examples: what a 4 looks like, what a 7 looks like, what a 9 looks like. A score with no quoted example is rejected, and that critic runs again. From the second cycle, each critic first compares the new screenshots with the old ones, blind, and says "better", "same" or "worse".
+All nine critics run every cycle. Outside their phase they still score and report, so nothing waits until the last cycle. Each rubric has four written examples: what a 4, a 7, an 8 and a 9 look like. 8 is the bar, and it needs evidence: a screenshot, a step in the walk log, a check result. A score with no quoted example is rejected, and that critic runs again. From the second cycle, each critic first compares the new screenshots with the old ones, blind, and says "better", "same" or "worse".
 
 ## Where the taste comes from
 
 A brief tells the critics what the page is for. It does not tell them what good looks like. The `taste/` folder does. The critics for aesthetic, visuals, motion, delight and micro-craft, and the builder, load it before they look at the page. In this order:
 
+0. **Your calibration board**: real screens you approved and rejected, with your words ("tacky", "that's it"). The taste critics, the builder and every judge look at these pictures first. A page that repeats the failure named on a rejected screen cannot score above 5. The board fills itself: your direction picks and your reactions to previews go on it. See [taste/calibration.md](taste/calibration.md).
 1. **The project's `taste.md`** in the project root: overrides for this one project. Copy [examples/taste.md](examples/taste.md) to start.
 2. **Your own taste file**, at `~/.claude/uiux/taste.md`, private, used in every project you run the skill in. The skill builds it for you: `/uiux taste init` imports what Claude already knows about your picks and then shows you ten visual pairs to choose from. After that, every run appends your reactions to previews, in your words, with the date and the project. Lines you repeat become standing rules that the critics quote. See [taste/owner-taste.md](taste/owner-taste.md) and [examples/owner-taste.md](examples/owner-taste.md).
 3. **[taste/references.md](taste/references.md)**: products and pages whose craft has held up, by mode, each with one line on why. Linear, Stripe, Toss, Vercel, Family, Raycast, Apple, and the galleries. A bar, never a layout to copy.
@@ -62,7 +73,7 @@ A brief tells the critics what the page is for. It does not tell them what good 
 6. **Installed taste skills**, when present: impeccable's craft floor, design-taste-frontend, high-end-visual-design.
 7. **Mobbin**, when connected: real screens of the same kind of page, to calibrate density and hierarchy. Mechanics only.
 
-The aesthetic critic must name the reference the page comes closest to, and the gap. "Closest to nothing" is a finding on its own.
+The aesthetic critic must name the reference and the calibration screen the page comes closest to, and the gap. "Closest to nothing" is a finding on its own.
 
 ## When the loop stops
 
@@ -159,12 +170,14 @@ Answer the questions. Approve the definition of done. Then wait. The loop writes
 ```
 SKILL.md                   the command: phases, rules, flags
 loop/orchestration.md      the procedure the main session follows, step by step
+loop/direction.md          2–3 directions from pictures before the cycles; the loop reopens it when the look is stuck
+loop/evidence.md           state harness, task walker, hard checks: run before the critics every cycle
 interview/questions.md     the question bank, in rounds, with a redesign branch
 interview/brief-template.md
 critics/00-shared.md       what every critic gets, the output JSON, the severity rules
 critics/01..09-*.md        one lens each, with the 4 / 7 / 9 examples
 builder/fix.md             the rules for the single writer
-taste/                     README.md (load order) · owner-taste.md · references.md · slop.md · defaults.md
+taste/                     README.md (load order) · calibration.md · owner-taste.md · references.md · slop.md · defaults.md
 integrations/              appshots.md · mobbin.md · motion-assets.md (HyperFrames, Remotion) · motion-anything.md · open-design.md · lottie.md
 tools/                     the three scripts and the video-to-spec procedure
 templates/cycle-report.md

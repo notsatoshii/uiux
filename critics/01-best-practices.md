@@ -15,4 +15,5 @@ Lens: does the surface meet the web's baseline for accessibility, responsiveness
 
 - **4:** at least one of: contrast failures on body text, horizontal scroll on phone, icon buttons with no name, h1 missing or several, console errors. The page works for a mouse user on a laptop and few others.
 - **7:** semantics and contrast pass; focus is visible; phone layout holds; one or two gaps remain (a missing empty state, a late-loading image shifting the page, reduced motion not handled).
+- **8:** semantics, contrast, focus and phone layout all pass; every state in the evidence file was captured and holds; the axe scan and Lighthouse show no serious issues; exactly one minor gap remains (a skeleton missing on one screen, reduced motion untested on one element).
 - **9:** a keyboard-only user and a screen-reader user can do the one job; nothing shifts on load; every state (loading, empty, error, long text) has been seen in a screenshot and holds; no console noise.

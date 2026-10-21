@@ -14,7 +14,10 @@ Lens: does the surface look like this brand, with intent, and not like the stati
 - **Pacing:** the loud and quiet zones from the brief are where the brief put them.
 - **Mode fit:** persuade surfaces earn attention; operate surfaces stay out of the way; read surfaces make reading pleasant; experience surfaces let the work lead.
 
-- **Side by side:** open the real-app reference board (orchestration 0.5c) next to this cycle's phone shots. Compare proportions, not components: how much of the screen is accent colour, how heavy the headings are, how much decoration there is, how much empty space. Name the single biggest difference.
+- **Side by side:** open the real-app reference board (orchestration intake 5c) next to this cycle's phone shots. Compare proportions, not components: how much of the screen is accent colour, how heavy the headings are, how much decoration there is, how much empty space. Name the single biggest difference.
+
+- **Calibration board** (`taste/calibration.md`): look at the owner's approved and rejected screens before you score. Name the closest image and why. The 9 anchor means "would sit next to the approved images"; a surface that repeats a failure named on a rejected image cannot score above 5. Quote the image's line from `index.md`.
+- **The chosen direction:** the brief records the direction the owner picked and the ones they rejected, in their words. Drift back toward a rejected direction is a severity-2 finding.
 
 ## Score cap
 
@@ -28,4 +31,5 @@ Look at the top screens for the surface type once (`appshots_search_by_tag` / `a
 
 - **4:** fails the logo test; two or more slop items; the hero is the generic layout; the three words are not visible in any element; sections all look alike; closest reference: none.
 - **7:** on-brand and clearly intended; no slop; the three words are each delivered somewhere; one section still breaks the world (a stock-looking card row, a type size out of scale, a section that leaks an anti-word); you can name the reference it is reaching for and the gap is one or two things.
+- **8:** passes the logo test; no slop; it sits next to the approved calibration images without looking cheaper and shares no failure named on a rejected one; the eye path matches the one job; one screen or section is still plainer or noisier than the rest.
 - **9:** distinct at a glance without the logo; every section reads as the same brand with its own rhythm; the eye path matches the one job; nothing on the page could be swapped for a template; it stands next to its closest reference without embarrassment; a designer would ask who made it.

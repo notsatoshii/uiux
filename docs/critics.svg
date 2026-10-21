@@ -11,26 +11,29 @@
     .line{stroke:#5b6472;stroke-width:1.6;stroke-dasharray:6 5}
   </style>
   <rect class="bg" x="0.5" y="0.5" width="959" height="469" rx="16"/>
-  <text class="h" x="32" y="42">The nine critics</text>
+  <text class="h" x="32" y="42">Nine critics, three phases</text>
+  <text class="gate" x="300" y="42">all run every cycle; the phase decides who leads the builder's list</text>
 
-  <text class="gate" x="32" y="72">Every cycle</text>
+  <text class="gate" x="32" y="76">A structure · cycles 1–2 · leads</text>
   <g>
-    <rect class="g1" x="32" y="84" width="170" height="70" rx="12"/><text class="t" x="46" y="112">01 best practices</text><text class="s" x="46" y="136">a11y · responsive · perf</text>
-    <rect class="g1" x="214" y="84" width="170" height="70" rx="12"/><text class="t" x="228" y="112">02 references</text><text class="s" x="228" y="136">mechanics, receipts</text>
-    <rect class="g1" x="396" y="84" width="170" height="70" rx="12"/><text class="t" x="410" y="112">03 design system</text><text class="s" x="410" y="136">tokens · tooltips · copy</text>
-    <rect class="g1" x="578" y="84" width="170" height="70" rx="12"/><text class="t" x="592" y="112">04 functionality</text><text class="s" x="592" y="136">every feature, state</text>
-    <rect class="g1" x="760" y="84" width="168" height="70" rx="12"/><text class="t" x="774" y="112">05 aesthetic</text><text class="s" x="774" y="136">brand, taste, no slop</text>
+    <rect class="g1" x="32" y="88" width="286" height="70" rx="12"/><text class="t" x="46" y="116">04 functionality</text><text class="s" x="46" y="140">every feature, state, task walk</text>
+    <rect class="g1" x="337" y="88" width="286" height="70" rx="12"/><text class="t" x="351" y="116">05 aesthetic</text><text class="s" x="351" y="140">brand, taste, calibration board</text>
+    <rect class="g1" x="642" y="88" width="286" height="70" rx="12"/><text class="t" x="656" y="116">02 references</text><text class="s" x="656" y="140">mechanics, receipts</text>
   </g>
 
-  <line class="line" x1="32" y1="188" x2="928" y2="188"/>
-  <text class="gate" x="32" y="216">After 04 functionality scores 8 or more</text>
+  <line class="line" x1="32" y1="186" x2="928" y2="186"/>
+  <text class="gate" x="32" y="214">B feel · cycles 3–4 · leads</text>
   <g>
-    <rect class="g2" x="32" y="228" width="280" height="70" rx="12"/><text class="t" x="46" y="256">06 visualize</text><text class="s" x="46" y="280">text and numbers → visuals, nothing invented</text>
-    <rect class="g2" x="324" y="228" width="312" height="70" rx="12"/><text class="t" x="338" y="256">07 motion</text><text class="s" x="338" y="280">A entrance + data · B hover, press, focus, state</text>
-    <rect class="g2" x="648" y="228" width="280" height="70" rx="12"/><text class="t" x="662" y="256">08 delight + ideas</text><text class="s" x="662" y="280">signature move, voice; ideas never built</text>
+    <rect class="g2" x="32" y="226" width="286" height="70" rx="12"/><text class="t" x="46" y="254">06 visualize</text><text class="s" x="46" y="278">text and numbers → visuals</text>
+    <rect class="g2" x="337" y="226" width="286" height="70" rx="12"/><text class="t" x="351" y="254">07 motion</text><text class="s" x="351" y="278">entrance, data, hover, press, focus</text>
+    <rect class="g2" x="642" y="226" width="286" height="70" rx="12"/><text class="t" x="656" y="254">08 delight + ideas</text><text class="s" x="656" y="278">signature move, voice</text>
   </g>
 
-  <line class="line" x1="32" y1="332" x2="928" y2="332"/>
-  <text class="gate" x="32" y="360">After every other critic is within one point of the bar</text>
-  <rect class="g3" x="32" y="372" width="896" height="70" rx="12"/><text class="t" x="46" y="400">09 micro-craft</text><text class="s" x="46" y="424">radii, shadow tint, icon weight, optical alignment, light direction, motion physics: one level deeper than the visitor notices</text>
+  <line class="line" x1="32" y1="324" x2="928" y2="324"/>
+  <text class="gate" x="32" y="352">C craft · cycles 5–6 · leads</text>
+  <g>
+    <rect class="g3" x="32" y="364" width="286" height="70" rx="12"/><text class="t" x="46" y="392">09 micro-craft</text><text class="s" x="46" y="416">radii, shadows, alignment (only here)</text>
+    <rect class="g3" x="337" y="364" width="286" height="70" rx="12"/><text class="t" x="351" y="392">03 design system</text><text class="s" x="351" y="416">tokens, tooltips, copy clarity</text>
+    <rect class="g3" x="642" y="364" width="286" height="70" rx="12"/><text class="t" x="656" y="392">01 best practices</text><text class="s" x="656" y="416">a11y, responsive, speed</text>
+  </g>
 </svg>

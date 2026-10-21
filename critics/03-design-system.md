@@ -38,4 +38,5 @@ Not copywriting; clarity. Labels say what happens ("Save and continue", not "Sub
 
 - **4:** several one-off values per screen, two button styles for the same role, icon buttons with no help, a label like "Submit" or "OK" on the main action, or an essential explanation only in a tooltip.
 - **7:** tokens are used almost everywhere; one or two stray values; every icon control has a name; jargon mostly explained; one label still vague.
+- **8:** no stray values on any captured screen; one button and one card system; every icon control named and every jargon word explained in place; one small inconsistency left (a heading weight, a gap on one screen).
 - **9:** nothing on the surface is styled outside the system; the system itself is small; every ambiguous element has help in place, nothing essential hides in a tooltip, and a phone user loses nothing; every label tells the visitor what will happen.

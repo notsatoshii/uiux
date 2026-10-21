@@ -2,6 +2,7 @@
 
 The brief says what the surface is for and how the brand feels. It does not say what good looks like. Taste does, at three levels. Every critic in 05–09 and the builder load all of them before they look at the surface, in this order; the earlier item wins where two disagree.
 
+0. **The calibration board** (`calibration.md`): the owner's approved and rejected screens, with their words. Pictures before words: critics 05, 08, 09, the builder and every judge look at it first.
 1. **The project's `taste.md`** (project root, see `examples/taste.md`): overrides for this one project. Absent → skip.
 2. **The owner's taste file**: what this person likes and hates, across every project, as a log of their real decisions. Location: `$UIUX_TASTE` if set, else `~/.claude/uiux/taste.md`. Private; never in a project repo. See `owner-taste.md` for how it is seeded, captured and read. Absent → the skill offers `/uiux taste init` once, then continues.
 3. **House rules** (`uiux.md`, CLAUDE.md): rules, not taste, but they bound it.

@@ -1,6 +1,6 @@
 # 07 Motion
 
-Two checks, one score (the lower, then adjust by one at most). Timing and easing defaults, when the brief is silent, are in `taste/defaults.md` (Motion); the motion items in `taste/slop.md` are automatic findings. Runs only once functionality holds ≥ 8. From the cycle after critic 06 first ran, check B also covers the visuals it introduced.
+Two checks, one score (the lower, then adjust by one at most). Timing and easing defaults, when the brief is silent, are in `taste/defaults.md` (Motion); the motion items in `taste/slop.md` are automatic findings. Runs every cycle; leads in phase B (feel); in phase A at most 3 structural findings. Once critic 06 has run, check B also covers the visuals it introduced.
 
 ## Check A: entrance and data motion
 
@@ -30,4 +30,5 @@ Every element the visitor can touch answers, consistently.
 
 - **4:** no entrance motion or a looping, bouncing one; stat numbers sit static; hover and press feedback missing on main actions, or the browser default focus ring; hover states stick on the phone screenshot.
 - **7:** entrance and data motion exist and are eased; buttons answer on hover and press; focus ring is branded; one gap (a chart that pops instead of drawing, a modal that jumps, a card that ignores hover, reduced motion unhandled).
+- **8:** motion explains the data and every control answers on hover, press and focus within the timing limits; reduced motion gives a complete static page; no stuck hover on touch; one transition is still slightly off (duration, easing or order).
 - **9:** motion explains the data and you would miss it if it were gone; every interactive element answers on hover, press and focus, consistently, within the timing limits; a phone user never sees a stuck hover; reduced motion gives a complete static page.

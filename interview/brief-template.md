@@ -40,7 +40,17 @@ surface: <route or file> · mode: <persuade|operate|read|experience> · kind: <n
 1. <…>
 2. <…>
 
-## Usability tasks (existing surfaces)
+## Direction (chosen by the owner, <date>)
+- chosen: <A|B|C> · <its five lines: ground/ink, accent and where, type pairing and heading weight, density, signature element>
+- owner's words: "<…>"
+- rejected: <B: "their words"> · <C: "their words">
+- key screen: <route/file> · direction shots: <path>
+- adjectives pinned to pictures: <word → reference or calibration image>
+
+## States (from `states.md`)
+<screen · state · how reached>; unreachable: <state · why · what critics assume>
+
+## Usability tasks (the task walker runs these every cycle)
 1. <task a real user does here>
 2. <…>
 3. <…>

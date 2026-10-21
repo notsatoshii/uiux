@@ -6,19 +6,21 @@ argument-hint: "<surface path or URL> [--bar 8] [--cycles 6] [--skip-interview] 
 
 # uiux
 
+version: 2.0.0 (2026-10-21) · orchestration checks that the running copy has `loop/direction.md`, `loop/evidence.md` and `taste/calibration.md`
+
 Read [loop/orchestration.md](loop/orchestration.md) before doing anything. It is the whole procedure; this file is the map.
 
 ## Phases
 
-1. **Intake** (you, no questions): find the surface, decide new build vs existing, read the project's house rules (`uiux.md` in the project root, then CLAUDE.md), find an existing brief. Facts come from the filesystem, never from the user.
-2. **Interview** (`interview/questions.md`): rounds of numbered questions with a recommended answer each, in the style of the `grilling` skill. Ends by reading back the definition of done, writing `docs/design/<surface>/brief.md` from `interview/brief-template.md`, and starting; no approval step. Skipped when a brief exists and the user did not ask for a new one; the brief is used as is.
-3. **First build** (only when the surface does not exist yet): build from the brief with the project's build-time skills (`impeccable`, `design-taste-frontend` or whatever is installed), then screenshot.
-4. **Cycles** (`loop/orchestration.md`): parallel critics → merged ranked findings → one builder → screenshots → score → repeat or stop. Nine critics in `critics/`, gated by progress: 01–05 always; 06 visualize, 07 motion, 08 delight once functionality holds ≥ 8; 09 micro-craft once everything else is within one point of the bar. Critics use the scripts in `tools/` for evidence and the connectors in `integrations/` (Mobbin, HyperFrames or Remotion, Lottie) when present.
-5. **Report**: `docs/design/<surface>/cycle-N.md` per cycle, `docs/design/<surface>/final.md` at the end, and a five-line summary in chat.
+1. **Intake** (you, no questions): find the surface, decide new build vs existing, read the project's house rules (`uiux.md` in the project root, then CLAUDE.md), find an existing brief, build the reference board, check the calibration board, and (for an existing surface) build the state harness (`loop/evidence.md`). Facts come from the filesystem, never from the user.
+2. **Interview** (`interview/questions.md`): rounds of numbered questions with a recommended answer each, in the style of the `grilling` skill; adjectives are pinned to pictures. Its last design question is the **direction** (`loop/direction.md`): 2–3 working versions of the key screen, side by side with the reference board, and the user picks. Then the definition of done is read back, `docs/design/<surface>/brief.md` is written and the loop starts; no approval step, no question after this. Skipped when a brief exists and the user did not ask for a new one.
+3. **First build** (only when the surface does not exist yet): build from the brief and the chosen direction with the project's build-time skills, then the state harness.
+4. **Cycles** (`loop/orchestration.md`): evidence pass (every state captured, the task walker runs the usability tasks in a real browser, hard checks) → all nine critics in parallel → merge, cut to 12 findings and one theme → one builder → score → repeat or stop. Three phases: **A structure** (04, 05, 02 lead), **B feel** (06, 07, 08 lead), **C craft** (09, 03, 01 lead). If aesthetic stays at 6 or below twice, the loop reopens direction itself with two structural variants and a judge who has not read the brief. Critics use `tools/` for evidence and `integrations/` when connected.
+5. **Report**: `docs/design/<surface>/cycle-N.md` and `evidence/cycle-N.md` per cycle, `final.md` at the end, and a five-line summary in chat.
 
 ## Taste
 
-The brief says what the surface is for. Taste says what good looks like, at three levels: the project's `taste.md`, then the owner's taste file (`~/.claude/uiux/taste.md` or `$UIUX_TASTE`, private, across all their projects), then the skill's own `taste/` (curated references, the slop list, known-good defaults), then the installed taste skills, then Mobbin for calibration. Critics 05–09 and the builder load it in that order before they look at the surface (`taste/README.md`).
+The brief says what the surface is for. Taste says what good looks like, in pictures first: the **calibration board** (`taste/calibration.md`), the owner's approved and rejected screens with their words, which the taste critics, the builder and every judge look at. Then in words, at three levels: the project's `taste.md`, then the owner's taste file (`~/.claude/uiux/taste.md` or `$UIUX_TASTE`, private, across all their projects), then the skill's own `taste/` (curated references, the slop list, known-good defaults), then the installed taste skills, then Mobbin for calibration. Critics 05–09 and the builder load it in that order before they look at the surface (`taste/README.md`).
 
 The owner's file is built by the skill, not typed by hand: `/uiux taste init` seeds it (import what the host knows, then a ten-round pairs interview shown visually); every run appends the owner's reactions to previews, quoted and dated (`taste/owner-taste.md`); `/uiux taste add "<note>"`, `show` and `promote` manage it. If the file does not exist, the first run offers `taste init` once and continues without it.
 
@@ -36,6 +38,7 @@ The owner's file is built by the skill, not typed by hand: `/uiux taste init` se
 
 - `/uiux taste init` seed the owner's taste file (import + pairs interview).
 - `/uiux taste add "<note>"` append a line. `/uiux taste show` print it. `/uiux taste promote` move repeated lines to Standing rules.
+- `/uiux taste add-shot <image> approved|rejected "<words>"` add a screen to the calibration board.
 
 ## Flags
 

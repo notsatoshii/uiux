@@ -13,7 +13,7 @@ Keep the whole interview under four rounds for a single page. The user is giving
 
 ## Round 2: brand point of view
 
-5. **Three words, three anti-words.** Three adjectives the surface should feel like and three it must never feel like. Recommend a set from existing brand material if any.
+5. **Three words, three anti-words.** Three adjectives the surface should feel like and three it must never feel like. Recommend a set from existing brand material if any. Then push back on each adjective once: show where it appears on the reference board and the calibration board ("regal" on a phone app looks like this screen, not like gold shapes), and ask whether that is what the user means. Adjectives that would turn into decoration (regal, bold, premium, playful, fun) are pinned to a picture before they enter the brief.
 6. **Core belief.** The one sentence the visitor should still believe after leaving. (The Scrollcraft "core belief statement".)
 7. **References, with the rule.** Two or three products or pages whose *mechanics* to learn from (pricing toggle, onboarding order, how they show proof). State back the rule: take mechanics, never visuals; no 1:1 clones. When Appshots or Mobbin is connected, search first and suggest: 3–5 candidate apps, each with the one mechanic worth taking and 1–2 screenshots; the user confirms, removes or adds, and only confirmed apps enter the brief (see `integrations/appshots.md`).
 8. **Visual world.** Existing tokens, fonts, palette, DESIGN.md? If yes: keep, expand, or replace. If none: pick a direction now (recommend one, name the fonts and the palette feel) so the critics have something to hold the build to. If the user hands you a reference image for the feel, run `tools/extract-tokens.py` on it and put the measurements (contrast, whitespace ratio, spacing unit) in the brief; the colours themselves are not transferred.
@@ -28,12 +28,16 @@ Keep the whole interview under four rounds for a single page. The user is giving
 13. **Scroll journey.** Section by section from the top: what the visitor sees, what reveals or moves there, loud or quiet, and what they should believe by the end of it. Recommend the whole map in one block; the user edits. This becomes the brief's scroll journey, which the motion critic checks against. For operate surfaces this is the task path instead of a scroll.
 13b. **Receipts.** For every claim or number the page will make: where is the evidence, and will the page show it (footnote, source drawer, live number, screenshot)? A claim with no receipt is cut or rewritten as a range; nothing is invented.
 
+## Round 3b: direction (from pictures)
+
+13c. **Direction.** Build 2–3 directions of the key screen per `loop/direction.md`, send them side by side with the reference board, and ask: "Which one, and what would you change in it?" Recommend one and say why. The answer is the last design decision the user makes; after it the loop runs without questions. Skip only for a narrow fix or when the user said to keep the look.
+
 ## Round 4: features and the bar
 
 14. **Feature list.** For an operate surface: every task the user must be able to do here. For persuade: every section, in order. This list becomes the functionality critic's checklist.
 15. **Accessibility and devices.** Minimum viewports, dark mode, reduced motion, keyboard users, screen readers: which are required, which nice to have.
 16. **Bar and budget.** Score bar (default 8; 9 for flagship, 7 for internal), cycle cap (default 6), token or time budget if any.
-17. **Definition of done.** Read back: the one job, the three words, the must-not-change list, the feature list, the bar. Ask for approval. On approval, write the brief.
+17. **Definition of done.** Read back: the one job, the three words (with their pictures), the chosen direction, the must-not-change list, the feature list, the usability tasks the walker will run, the bar. Then write the brief and start; no separate approval step.
 
 ## Redesign branch
 

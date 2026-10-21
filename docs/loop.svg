@@ -1,61 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5b6472"/></marker>
   </defs>
   <style>
     .bg{fill:#ffffff;stroke:#d5dae2;stroke-width:1}
     .box{fill:#eef2f8;stroke:#5b6472;stroke-width:1.6}
+    .you{fill:#e3f3ea;stroke:#2f8f62}
     .hot{fill:#ffe3da;stroke:#d93d22}
-    .t{fill:#1b202a;font-weight:700;font-size:18px}
-    .s{fill:#3d4552;font-size:14px}
+    .t{fill:#1b202a;font-weight:700;font-size:17px}
+    .s{fill:#3d4552;font-size:13.5px}
     .l{stroke:#5b6472;stroke-width:2;fill:none;marker-end:url(#a)}
-    .lab{fill:#3d4552;font-size:14px;font-style:italic}
+    .lab{fill:#3d4552;font-size:13.5px;font-style:italic}
     .h{fill:#1b202a;font-weight:700;font-size:20px}
   </style>
-  <rect class="bg" x="0.5" y="0.5" width="959" height="399" rx="16"/>
-  <text class="h" x="32" y="42">The loop</text>
+  <rect class="bg" x="0.5" y="0.5" width="959" height="429" rx="16"/>
+  <text class="h" x="32" y="40">The loop</text>
+  <text class="lab" x="140" y="40">green = you take part · after Direction it never asks</text>
 
   <!-- row 1 -->
-  <rect class="box" x="32" y="70" width="190" height="80" rx="14"/>
-  <text class="t" x="127" y="103" text-anchor="middle">1 Interview</text>
-  <text class="s" x="127" y="128" text-anchor="middle">questions → brief.md</text>
+  <rect class="box you" x="32" y="64" width="200" height="80" rx="14"/>
+  <text class="t" x="132" y="96" text-anchor="middle">1 Interview</text>
+  <text class="s" x="132" y="120" text-anchor="middle">words pinned to pictures</text>
 
-  <rect class="box" x="262" y="70" width="190" height="80" rx="14"/>
-  <text class="t" x="357" y="103" text-anchor="middle">2 First build</text>
-  <text class="s" x="357" y="128" text-anchor="middle">only if nothing exists</text>
+  <rect class="box you" x="262" y="64" width="200" height="80" rx="14"/>
+  <text class="t" x="362" y="96" text-anchor="middle">2 Direction</text>
+  <text class="s" x="362" y="120" text-anchor="middle">2–3 real screens, you pick</text>
 
-  <rect class="box" x="492" y="70" width="190" height="80" rx="14"/>
-  <text class="t" x="587" y="103" text-anchor="middle">3 Screenshots</text>
-  <text class="s" x="587" y="128" text-anchor="middle">phone, desktop, states</text>
+  <rect class="box" x="492" y="64" width="200" height="80" rx="14"/>
+  <text class="t" x="592" y="96" text-anchor="middle">3 Build + harness</text>
+  <text class="s" x="592" y="120" text-anchor="middle">every state reachable</text>
 
-  <rect class="box" x="722" y="70" width="206" height="80" rx="14"/>
-  <text class="t" x="825" y="103" text-anchor="middle">4 Critics</text>
-  <text class="s" x="825" y="128" text-anchor="middle">9 in parallel, scores 1–10</text>
+  <rect class="box" x="722" y="64" width="206" height="80" rx="14"/>
+  <text class="t" x="825" y="96" text-anchor="middle">4 Evidence</text>
+  <text class="s" x="825" y="120" text-anchor="middle">states, task walk, checks</text>
 
-  <path class="l" d="M222 110H262"/><path class="l" d="M452 110H492"/><path class="l" d="M682 110H722"/>
+  <path class="l" d="M232 104H262"/><path class="l" d="M462 104H492"/><path class="l" d="M692 104H722"/>
 
   <!-- row 2 -->
   <rect class="box" x="722" y="250" width="206" height="80" rx="14"/>
-  <text class="t" x="825" y="283" text-anchor="middle">5 Merge, rank</text>
-  <text class="s" x="825" y="308" text-anchor="middle">severity 1 → 2 → 3</text>
+  <text class="t" x="825" y="282" text-anchor="middle">5 Nine critics</text>
+  <text class="s" x="825" y="306" text-anchor="middle">in parallel, every cycle</text>
 
-  <rect class="box" x="492" y="250" width="190" height="80" rx="14"/>
-  <text class="t" x="587" y="283" text-anchor="middle">6 One builder</text>
-  <text class="s" x="587" y="308" text-anchor="middle">fixes the list, alone</text>
+  <rect class="box" x="492" y="250" width="200" height="80" rx="14"/>
+  <text class="t" x="592" y="282" text-anchor="middle">6 Cut to 12</text>
+  <text class="s" x="592" y="306" text-anchor="middle">one theme per cycle</text>
 
-  <rect class="box hot" x="262" y="250" width="190" height="80" rx="14"/>
-  <text class="t" x="357" y="283" text-anchor="middle">7 Score</text>
-  <text class="s" x="357" y="308" text-anchor="middle">bar? plateau? cap?</text>
+  <rect class="box" x="262" y="250" width="200" height="80" rx="14"/>
+  <text class="t" x="362" y="282" text-anchor="middle">7 One builder</text>
+  <text class="s" x="362" y="306" text-anchor="middle">fixes the list, alone</text>
 
-  <rect class="box" x="32" y="250" width="190" height="80" rx="14"/>
-  <text class="t" x="127" y="283" text-anchor="middle">8 Report</text>
-  <text class="s" x="127" y="308" text-anchor="middle">cycle-N.md, final.md</text>
+  <rect class="box hot" x="32" y="250" width="200" height="80" rx="14"/>
+  <text class="t" x="132" y="282" text-anchor="middle">8 Score</text>
+  <text class="s" x="132" y="306" text-anchor="middle">bar? plateau? cap?</text>
 
-  <path class="l" d="M825 150V250"/><path class="l" d="M722 290H682"/><path class="l" d="M492 290H452"/>
-  <path class="l" d="M262 290H222"/>
-  <text class="lab" x="242" y="350" text-anchor="middle">stop</text>
+  <path class="l" d="M870 144V250"/><path class="l" d="M722 290H692"/><path class="l" d="M492 290H462"/><path class="l" d="M262 290H232"/>
 
-  <!-- loop back -->
-  <path class="l" d="M357 250V206Q357 190 373 190H571Q587 190 587 174V150"/>
-  <text class="lab" x="472" y="182" text-anchor="middle">not yet → next cycle</text>
+  <!-- loop back to evidence -->
+  <path class="l" d="M132 250V196Q132 182 146 182H766Q780 182 780 168V144"/>
+  <text class="lab" x="478" y="174" text-anchor="middle">not yet → next cycle (phase A structure → B feel → C craft)</text>
+
+  <!-- stop + reopen -->
+  <text class="lab" x="132" y="360" text-anchor="middle">stop → 9 Report</text>
+  <text class="lab" x="362" y="392" text-anchor="middle">look stuck at ≤ 6 twice → the loop reopens Direction itself</text>
 </svg>
