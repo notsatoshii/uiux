@@ -119,6 +119,7 @@ These add evidence and assets. The loop works without them and says so in its re
 | Service | What it adds | How to connect |
 |---|---|---|
 | [Mobbin](https://mobbin.com) | Real app and web screens for the references critic and the interview | In Claude: `+` → Connectors → Browse → **Mobbin** → Connect. Needs a paid Mobbin account. In the terminal: `npx -y mobbin-mcp auth`, then `claude mcp add mobbin -- npx -y mobbin-mcp`. |
+| [Appshots](https://appshots.design) | Real iOS, Android and web screens and flows; the interview searches it and suggests reference apps to confirm, critics 02/05/06 check against them | No official connector. Community MCP `itsOwen/appshots.design-mcp` with your own login: see `integrations/appshots.md`. |
 | [HyperFrames](https://github.com/heygen-com/hyperframes) | Generated motion assets from HTML, rendered to video | Skills: `npx skills add heygen-com/hyperframes`. Or the connector **HyperFrames by HeyGen**. Needs Node 22+ and FFmpeg. |
 | [Remotion](https://www.remotion.dev/docs/ai/claude-code) | Generated motion assets from React | Follow the Remotion docs for the current skills install. Use it for Next and React projects. |
 | [motion-anything](https://github.com/nexu-io/motion-anything) | ~400 motion recipes and `MOTION-SPEC.md`, the motion standard the motion critic uses | `git clone https://github.com/nexu-io/motion-anything.git`. No install, Node 18+. Link `skills/motion-anything` and `skills/gsap` into `~/.claude/skills/`. See [integrations/motion-anything.md](integrations/motion-anything.md). |
@@ -164,7 +165,7 @@ critics/00-shared.md       what every critic gets, the output JSON, the severity
 critics/01..09-*.md        one lens each, with the 4 / 7 / 9 examples
 builder/fix.md             the rules for the single writer
 taste/                     README.md (load order) · owner-taste.md · references.md · slop.md · defaults.md
-integrations/              mobbin.md · motion-assets.md (HyperFrames, Remotion) · motion-anything.md · open-design.md · lottie.md
+integrations/              appshots.md · mobbin.md · motion-assets.md (HyperFrames, Remotion) · motion-anything.md · open-design.md · lottie.md
 tools/                     the three scripts and the video-to-spec procedure
 templates/cycle-report.md
 examples/uiux.md           a house-rules file to copy

@@ -20,9 +20,9 @@ Lens: does the surface use the proven mechanics of the brief's references, witho
 
 Every claim and every number on the surface, listed, with: its evidence (from the brief's receipts), and whether the page shows the evidence (footnote, source link, drawer, live figure, screenshot). A claim with no evidence is severity 1 (`needs data:` or cut). Evidence that exists but is not shown is severity 2. A live number (API or data file) beats a typed one; a typed number needs a date next to it.
 
-## With Mobbin connected
+## With Appshots or Mobbin connected
 
-Search the surface's type and the brief's references (`search_flows`, `search_sections`) once; take the mechanics from the top results and cite the screen ids in findings. See `integrations/mobbin.md`. Without it, say so in the summary's first line.
+Search the surface's type and the brief's confirmed reference apps once (Appshots: `appshots_search_flows`, `appshots_search_screens`, `appshots_search_by_tag`, then `appshots_get_screens` to look; Mobbin: `search_flows`, `search_sections`); take the mechanics from the top results and cite the screen ids in findings. See `integrations/appshots.md` and `integrations/mobbin.md`. Without it, say so in the summary's first line.
 
 ## Anchors
 

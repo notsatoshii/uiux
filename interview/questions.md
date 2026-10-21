@@ -15,10 +15,10 @@ Keep the whole interview under four rounds for a single page. The user is giving
 
 5. **Three words, three anti-words.** Three adjectives the surface should feel like and three it must never feel like. Recommend a set from existing brand material if any.
 6. **Core belief.** The one sentence the visitor should still believe after leaving. (The Scrollcraft "core belief statement".)
-7. **References, with the rule.** Two or three products or pages whose *mechanics* to learn from (pricing toggle, onboarding order, how they show proof). State back the rule: take mechanics, never visuals; no 1:1 clones.
+7. **References, with the rule.** Two or three products or pages whose *mechanics* to learn from (pricing toggle, onboarding order, how they show proof). State back the rule: take mechanics, never visuals; no 1:1 clones. When Appshots or Mobbin is connected, search first and suggest: 3–5 candidate apps, each with the one mechanic worth taking and 1–2 screenshots; the user confirms, removes or adds, and only confirmed apps enter the brief (see `integrations/appshots.md`).
 8. **Visual world.** Existing tokens, fonts, palette, DESIGN.md? If yes: keep, expand, or replace. If none: pick a direction now (recommend one, name the fonts and the palette feel) so the critics have something to hold the build to. If the user hands you a reference image for the feel, run `tools/extract-tokens.py` on it and put the measurements (contrast, whitespace ratio, spacing unit) in the brief; the colours themselves are not transferred.
 9. **Signature move.** One memorable interaction or moment unique to this surface. Recommend one. "None" is an acceptable answer for operate-mode surfaces. If the user has a clip of an interaction they like, run `tools/video-to-motion-spec.md` on it and attach the spec to the brief.
-9b. **Mobbin, when connected.** For the surface type and each reference, search flows and sections once and show two or three candidate mechanics with their screen ids; the user picks. See `integrations/mobbin.md`.
+9b. **Appshots or Mobbin, when connected.** For the surface type and each reference, search flows and sections once and show two or three candidate mechanics with their screen ids; the user picks. See `integrations/appshots.md` and `integrations/mobbin.md`.
 
 ## Round 3: content and proof
 

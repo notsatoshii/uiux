@@ -20,6 +20,10 @@ Lens: does the surface look like this brand, with intent, and not like the stati
 
 The score cannot go above 6 while the surface looks cheaper, louder or more decorated than the reference board, whatever the brief's adjectives say ("regal", "bold", "confident" are not licences for decoration). Quote the difference you named.
 
+## With Appshots or Mobbin connected
+
+Look at the top screens for the surface type once (`appshots_search_by_tag` / `appshots_get_screens`, or Mobbin) to calibrate density, hierarchy and proportions. A bar, not a layout. See `integrations/appshots.md`.
+
 ## Anchors
 
 - **4:** fails the logo test; two or more slop items; the hero is the generic layout; the three words are not visible in any element; sections all look alike; closest reference: none.
