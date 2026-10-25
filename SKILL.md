@@ -1,12 +1,26 @@
 ---
 name: uiux
-description: Autonomous UI/UX design loop. One command interviews you for direction and brand, writes a brief, builds (first time) or takes the existing surface, then runs cycles of parallel critics (best practices, references, design system + tooltips + copy, functionality, aesthetic, visualize, motion, delight) and a single builder until the surface clears a scored bar or plateaus. Use when the user says /uiux, "run the design loop", "loop on this page", or wants a surface built or improved end to end without babysitting.
+description: 'Use when asked to /uiux, "run the design loop", or build or improve a UI surface end to end with critics and one builder, unattended.'
+version: 2.1.0
+triggers:
+  - /uiux
+  - run the design loop
+  - loop on this page
+  - redesign this screen until it is good
+  - build this page and keep improving it
+  - polish the UI end to end
+  - 디자인 루프 돌려 줘
+  - 이 화면 디자인 개선해 줘
+  - 이 페이지 끝까지 다듬어 줘
+  - UI/UX 손봐 줘
 argument-hint: "<surface path or URL> [--bar 8] [--cycles 6] [--skip-interview] [--only <critic,...>]"
 ---
 
 # uiux
 
-version: 2.0.0 (2026-10-21) · orchestration checks that the running copy has `loop/direction.md`, `loop/evidence.md` and `taste/calibration.md`
+version: 2.1.0 (2026-10-25), also in the frontmatter · orchestration checks that the running copy has `loop/direction.md`, `loop/evidence.md` and `taste/calibration.md`
+
+Autonomous UI/UX design loop. One command interviews you for direction and brand, writes a brief, builds (first time) or takes the existing surface, then runs cycles of nine parallel critics (01 best practices, 02 references, 03 design system + tooltips + copy, 04 functionality, 05 aesthetic, 06 visualize, 07 motion, 08 delight, 09 micro-craft) and a single builder until the surface clears a scored bar or plateaus, without babysitting.
 
 Read [loop/orchestration.md](loop/orchestration.md) before doing anything. It is the whole procedure; this file is the map.
 
@@ -28,7 +42,7 @@ The owner's file is built by the skill, not typed by hand: `/uiux taste init` se
 
 - Critics read, the builder writes. Never two writers on the same files.
 - A critic sees the brief, the screenshots, the code and the previous cycle's screenshots. Never the builder's reasoning or chat.
-- Scores need anchors. Every critic rubric in `critics/` carries what a 4, a 7 and a 9 look like. A score without a quoted anchor is invalid; re-run that critic.
+- Scores need anchors. Every critic rubric in `critics/` carries what a 4, a 7, an 8 and a 9 look like (`critics/00-shared.md`). A score without a quoted anchor is invalid; re-run that critic.
 - No invented facts: no made-up numbers, claims, curriculum, prices, testimonials. A visual that needs data the project does not have logs `needs data:` instead.
 - House rules win over this skill. If `uiux.md` or CLAUDE.md says copy may not change, or text must be in a language and register, every critic and the builder obey it.
 - The loop stops on its own: bar reached, plateau, cycle cap or token cap. After the interview it never asks the user anything: not "continue?", not "approve?", not "which option?". When a call is needed (a brand pick, which of two options, a missing asset) it takes the safest option that follows the brief and the design system, logs it as a decision the loop made, and keeps going. Facts, numbers and prices are never invented: they stay as visible `needs data:` placeholders. Copy under a "copy may not change" rule stays unchanged; proposed rewrites are listed. Both are reviewed in `final.md` after the run.
