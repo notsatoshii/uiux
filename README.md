@@ -180,6 +180,7 @@ examples/uiux.md           a house-rules file to copy
 examples/taste.md          a project taste file to copy
 examples/owner-taste.md    what your own taste file looks like after a few runs
 docs/                      the diagrams and sources.md
+evals/                     planted-defect fixtures, a clean control, check_fixtures.py (see evals/README.md)
 ```
 
 ## Rules that never bend
