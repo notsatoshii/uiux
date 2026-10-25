@@ -1,0 +1,22 @@
+[
+  {"query": "/uiux src/app/page.tsx", "should_trigger": true},
+  {"query": "run the design loop on the pricing page and keep going until it clears the bar", "should_trigger": true},
+  {"query": "this onboarding screen looks cheap. redesign it end to end, I don't want to babysit it: app/onboarding/page.tsx", "should_trigger": true},
+  {"query": "build a landing page for our study planner from scratch and keep improving it with critics until it's good", "should_trigger": true},
+  {"query": "loop on this page: src/routes/dashboard.svelte, phone first", "should_trigger": true},
+  {"query": "이 화면 디자인 좀 끝까지 다듬어 줘. 알아서 돌려서 괜찮아질 때까지 고쳐 줘: src/pages/home.tsx", "should_trigger": true},
+  {"query": "학원 관리 앱 출결 화면 UI/UX 전체적으로 개선해 줘. 비평하고 고치는 루프로", "should_trigger": true},
+  {"query": "the settings screen is ugly and confusing, polish the UI end to end with the design loop", "should_trigger": true},
+  {"query": "/uiux https://localhost:3000/pricing --cycles 3 --only 01-best-practices,09-microcraft", "should_trigger": true},
+  {"query": "redesign our marketing homepage, interview me for the brand first, then build and iterate on it", "should_trigger": true},
+  {"query": "translate this landing page copy from Korean to natural English", "should_trigger": false},
+  {"query": "plan a 45 minute lesson on writing good meeting notes and loop on it until it's solid", "should_trigger": false},
+  {"query": "fix the typo in the hero headline, it says 'Strat' instead of 'Start'", "should_trigger": false},
+  {"query": "make me a 10-slide pitch deck for the planner app", "should_trigger": false},
+  {"query": "grill me on this product idea before I build anything", "should_trigger": false},
+  {"query": "why does this React component re-render twice on mount?", "should_trigger": false},
+  {"query": "이 영어 안내문을 자연스러운 한국어로 옮겨 줘", "should_trigger": false},
+  {"query": "add a dark mode toggle to the navbar, just the code", "should_trigger": false},
+  {"query": "make a bar chart of weekly signups from this CSV", "should_trigger": false},
+  {"query": "review this pull request for bugs before I merge it", "should_trigger": false}
+]

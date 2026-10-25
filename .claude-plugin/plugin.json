@@ -1,0 +1,9 @@
+{
+  "name": "uiux",
+  "version": "2.1.0",
+  "description": "Autonomous UI/UX design loop: interview, direction pick, nine critics, one builder, until the surface clears the bar",
+  "author": { "name": "notsatoshii" },
+  "license": "MIT",
+  "repository": "https://github.com/notsatoshii/uiux",
+  "skills": ["./"]
+}
