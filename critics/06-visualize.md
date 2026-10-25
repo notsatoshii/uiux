@@ -28,7 +28,7 @@ Score on whether each visual earns its place, not on count. A landing page with 
 
 In a redesign under a "copy may not change" rule, a visual sits beside the original text; text it would replace goes to `proposed_rewrites`.
 
-## With Appshots or Mobbin connected
+## With Appshots connected
 
 Search how comparable apps show the same kind of number (`appshots_search_by_component` "Chart", "Progress", "Calendar", then `appshots_get_screens`) and propose a proven visual form; cite the screen. See `integrations/appshots.md`.
 

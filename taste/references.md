@@ -51,7 +51,7 @@ Products and pages whose craft has held up. One line each on why. Look at them f
 
 | Gallery | Use |
 |---|---|
-| [Mobbin](https://mobbin.com) | Real flows and screens by product type; connector in `integrations/mobbin.md`. |
+| [Mobbin](https://mobbin.com) | Real flows and screens by product type; a paid alternative to Appshots, see `docs/sources.md`. |
 | [Refero](https://refero.design) | Real web app screens, searchable by pattern. |
 | [Godly](https://godly.website) | Landing pages with strong single ideas. |
 | [Siteinspire](https://www.siteinspire.com) | Long-running, curated, mostly restrained. |

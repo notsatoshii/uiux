@@ -71,7 +71,7 @@ A brief tells the critics what the page is for. It does not tell them what good 
 4. **[taste/slop.md](taste/slop.md)**: the tells of AI-default design. Each one on the page without a reason in the brief is a finding. Three on one screen cap the aesthetic score at 5.
 5. **[taste/defaults.md](taste/defaults.md)**: known-good type, spacing, colour, shadow and motion choices for when the brief is silent.
 6. **Installed taste skills**, when present: impeccable's craft floor, design-taste-frontend, high-end-visual-design.
-7. **Mobbin**, when connected: real screens of the same kind of page, to calibrate density and hierarchy. Mechanics only.
+7. **Appshots**, when connected: real screens of the same kind of page, to calibrate density and hierarchy. Mechanics only.
 
 The aesthetic critic must name the reference and the calibration screen the page comes closest to, and the gap. "Closest to nothing" is a finding on its own.
 
@@ -129,13 +129,8 @@ These add evidence and assets. The loop works without them and says so in its re
 
 | Service | What it adds | How to connect |
 |---|---|---|
-| [Mobbin](https://mobbin.com) | Real app and web screens for the references critic and the interview | In Claude: `+` → Connectors → Browse → **Mobbin** → Connect. Needs a paid Mobbin account. In the terminal: `npx -y mobbin-mcp auth`, then `claude mcp add mobbin -- npx -y mobbin-mcp`. |
 | [Appshots](https://appshots.design) | Real iOS, Android and web screens and flows; the interview searches it and suggests reference apps to confirm, critics 02/05/06 check against them | No official connector. Community MCP `itsOwen/appshots.design-mcp` with your own login: see `integrations/appshots.md`. |
-| [HyperFrames](https://github.com/heygen-com/hyperframes) | Generated motion assets from HTML, rendered to video | Skills: `npx skills add heygen-com/hyperframes`. Or the connector **HyperFrames by HeyGen**. Needs Node 22+ and FFmpeg. |
-| [Remotion](https://www.remotion.dev/docs/ai/claude-code) | Generated motion assets from React | Follow the Remotion docs for the current skills install. Use it for Next and React projects. |
 | [motion-anything](https://github.com/nexu-io/motion-anything) | ~400 motion recipes and `MOTION-SPEC.md`, the motion standard the motion critic uses | `git clone https://github.com/nexu-io/motion-anything.git`. No install, Node 18+. Link `skills/motion-anything` and `skills/gsap` into `~/.claude/skills/`. See [integrations/motion-anything.md](integrations/motion-anything.md). |
-| [Open Design](https://github.com/nexu-io/open-design) | A local design workspace with 100+ skills, design systems, and HyperFrames rendering; an `od` CLI and an MCP server | `git clone`, `pnpm install`, `pnpm tools-dev run web`, then `od mcp install claude`. Node 24, pnpm 10.33. See [integrations/open-design.md](integrations/open-design.md). |
-| [Lottie](https://lottiefiles.com) | Small JSON animations for feedback moments | No connector. The builder uses `lottie-web` or `@lottiefiles/dotlottie-web` and files from your project or the free library. |
 | A browser tool | Screenshots per viewport and state | The Claude desktop app browser pane, a Playwright MCP, or the `playwright-cli` skill. Without one, the critics read code only. |
 
 ### Step 6. Run it
@@ -175,10 +170,10 @@ loop/evidence.md           state harness, task walker, hard checks: run before t
 interview/questions.md     the question bank, in rounds, with a redesign branch
 interview/brief-template.md
 critics/00-shared.md       what every critic gets, the output JSON, the severity rules
-critics/01..09-*.md        one lens each, with the 4 / 7 / 9 examples
+critics/01..09-*.md        one lens each, with the 4 / 7 / 8 / 9 examples
 builder/fix.md             the rules for the single writer
 taste/                     README.md (load order) · calibration.md · owner-taste.md · references.md · slop.md · defaults.md
-integrations/              appshots.md · mobbin.md · motion-assets.md (HyperFrames, Remotion) · motion-anything.md · open-design.md · lottie.md
+integrations/              appshots.md · motion-anything.md (others: notes in docs/sources.md)
 tools/                     the three scripts and the video-to-spec procedure
 templates/cycle-report.md
 examples/uiux.md           a house-rules file to copy

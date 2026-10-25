@@ -1,6 +1,6 @@
 # motion-anything (motion recipes and the motion standard)
 
-[motion-anything](https://github.com/nexu-io/motion-anything) is a local, zero-dependency motion engine from the Open Design family: ~400 recipes (kinetic text, ambient CTAs, reveals, sliders, shaders), 59 design-system packs, 58 HyperFrames video templates, and `MOTION-SPEC.md`, a motion standard with duration and easing tokens, a restraint budget per viewport, performance rules and reduced-motion fallbacks. It exports JSON, CSS, React, Lottie, MP4, GIF and portable `SKILL.md` bundles.
+[motion-anything](https://github.com/nexu-io/motion-anything) is a local, zero-dependency motion engine from the Open Design family (`docs/sources.md`): ~400 recipes (kinetic text, ambient CTAs, reveals, sliders, shaders), 59 design-system packs, 58 HyperFrames video templates, and `MOTION-SPEC.md`, a motion standard with duration and easing tokens, a restraint budget per viewport, performance rules and reduced-motion fallbacks. It exports JSON, CSS, React, Lottie, MP4, GIF and portable `SKILL.md` bundles.
 
 ## Install
 

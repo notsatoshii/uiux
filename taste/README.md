@@ -10,7 +10,7 @@ The brief says what the surface is for and how the brand feels. It does not say 
 5. **`slop.md`** here: the tells of AI-default design. Each present without a reason in the brief is an automatic finding.
 6. **`defaults.md`** here: known-good type, spacing, motion, shadow and colour choices for when the brief is silent.
 7. **Installed taste skills**, when present in `~/.claude/skills/`: `impeccable` (read `reference/craft-floor.md`), `design-taste-frontend`, `high-end-visual-design`. Read the parts that apply to the surface's mode. These are the deepest sources; `references.md` and `defaults.md` are the short form for when they are not installed.
-8. **Appshots or Mobbin**, when connected (`integrations/appshots.md`): for the surface type, look at the top screens to calibrate density, hierarchy and section order for this kind of page. Mechanics and calibration only; a layout recognisable from a Mobbin screen is a finding.
+8. **Appshots**, when connected (`integrations/appshots.md`): for the surface type, look at the top screens to calibrate density, hierarchy and section order for this kind of page. Mechanics and calibration only; a layout recognisable from a library screen is a finding.
 
 ## The test taste must pass
 

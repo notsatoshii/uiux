@@ -8,16 +8,21 @@ What uiux borrows, and from where. Ideas are borrowed; no vendor is required.
 |---|---|---|
 | Claude Code skills | How a folder with a SKILL.md becomes a slash command | https://code.claude.com/docs/en/skills |
 | Claude Code subagents | How the critics run in parallel | https://code.claude.com/docs/en/sub-agents |
-| MCP connectors | How Mobbin and HyperFrames attach to Claude | https://code.claude.com/docs/en/mcp |
-| Mobbin | Library of real app and web screens and flows; connector "Mobbin" | https://mobbin.com |
-| HyperFrames (HeyGen) | HTML + GSAP video compositions for coding agents; connector and skills | https://github.com/heygen-com/hyperframes |
-| Remotion | React video framework with official agent skills | https://www.remotion.dev/docs/ai/claude-code |
-| Lottie | JSON vector animation format and players | https://lottiefiles.com · https://github.com/airbnb/lottie-web · https://github.com/LottieFiles/dotlottie-web |
+| MCP connectors | How Appshots and other screen libraries attach to Claude | https://code.claude.com/docs/en/mcp |
 | Pillow | Python imaging library used by `tools/` | https://python-pillow.org |
 | FFmpeg | Frame extraction for `tools/frames.py` | https://ffmpeg.org |
 | Playwright | Fallback screenshots | https://playwright.dev |
 | impeccable | Design skill with the shape/critique/audit/polish playbooks and the persuade/operate/read/experience modes uiux reuses | https://github.com/pbakaus/impeccable |
 | ASD-STE100 | Simplified Technical English, the writing standard for this README | https://www.asd-ste100.org |
+
+## Optional services, not wired into the loop
+
+These had their own `integrations/` page until 2.1.0. None was used in practice, so the loop no longer names them. They still work if you connect them; follow the same rules as the kept integrations.
+
+- **Mobbin** (https://mobbin.com): real app and web screens, paid. Connector "Mobbin" in Claude, or `npx -y mobbin-mcp auth` then `claude mcp add mobbin -- npx -y mobbin-mcp`. Same jobs and clone rule as `integrations/appshots.md`.
+- **Open Design** (https://github.com/nexu-io/open-design): local design workspace with skills, design-system packs, an `od` CLI and an MCP server (Node 24, pnpm 10.33). Its design-system packs can serve as mechanics references for critic 02; its `review-animations` skill as a second opinion for critic 07. Generated pages never go into the codebase whole.
+- **HyperFrames** (https://github.com/heygen-com/hyperframes, `npx skills add heygen-com/hyperframes`, Node 22+ and FFmpeg) and **Remotion** (https://www.remotion.dev/docs/ai/claude-code): engines for generated motion assets from HTML or React. Spec first in the cycle report, project tokens only, poster frame plus video under 2 MB on the phone viewport, a reduced-motion path showing the poster, composition source kept under `assets/motion/<name>/`.
+- **Lottie** (https://lottiefiles.com, `lottie-web` or `@lottiefiles/dotlottie-web`): small JSON animations for feedback moments. One file per moment, recoloured to tokens, under 30 KB, static final frame under reduced motion, also announced in text; check each file's licence.
 
 ## Design and craft ideas
 

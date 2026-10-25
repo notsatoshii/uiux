@@ -12,7 +12,7 @@
 
 ## When it is present
 
-It does the same jobs as Mobbin (`integrations/mobbin.md`). When both are connected, use both and record which screens came from where.
+It is the one screen library the loop is wired for. Mobbin can do the same jobs under the same rules (see `docs/sources.md`); when both are connected, record which screens came from where.
 
 - **Orchestration 5b/5c:** run `appshots_whoami` to check the login. Build the real-app reference board from `appshots_get_screens`, on the surface's platform (`platform: ios|android|web`).
 - **Interview, question 7 (references): search first, then suggest.**
@@ -28,6 +28,6 @@ It does the same jobs as Mobbin (`integrations/mobbin.md`). When both are connec
 
 ## Rules
 
-- The clone rule from `integrations/mobbin.md` applies unchanged. Any section recognisable at a glance as a library screen is a severity-2 finding.
+- The clone rule: a reference screen gives mechanics (what comes first, how proof is shown, how the first step is made easy), never the look. Any section recognisable at a glance as a library screen is a severity-2 finding.
 - Screens are someone else's copyright. Keep them in the session scratchpad, never in the project repo.
 - If the login has expired (a 401 or a refresh failure), say so in the summary's first line, carry on without it and tell the user how to log in again (step 4).
